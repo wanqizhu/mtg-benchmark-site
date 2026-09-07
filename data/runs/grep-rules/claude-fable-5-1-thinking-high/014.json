@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/claude-fable-5-1-thinking-high/014.json",
+  "judge_cost_usd": 0.139668,
+  "judge_reasoning": "The model solution is functionally identical to the official solution: it casts Aviary Mechanic to bounce Greenbelt Rampager, then recasts Rampager three times (each failing to pay its energy cost due to careful energy management), triggering Rhonas's Monument four times total to pump Rhonas to 13/13, while using the generated energy to grow Longtusk Cub to 5/5 via two +1/+1 counters (enabling Rhonas to attack). All mana costs, land taps, and energy accounting check out exactly (using all 5 lands with no excess or shortfall). The combat damage analysis is verified correct: examining all optimal blocking distributions, the minimum guaranteed damage is exactly 12, matching the opponent's life total for a guaranteed win in every blocking scenario.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "1. Tap Scattered Groves (W) + Aether Hub (C): cast Aviary Mechanic ({1}{W}). Monument trigger: Rhonas the Indomitable gets +2/+2 and trample (7/7). Mechanic ETB: return Greenbelt Rampager to hand.\n2. Tap Scattered Groves (G): cast Greenbelt Rampager. Monument trigger: Rhonas +2/+2 (9/9). Rampager enters; you can't pay {E}{E} (only 1 energy), so it returns to hand and you get {E} (now 2 energy).\n3. Longtusk Cub: pay {E}{E} \u2192 +1/+1 counter (Cub is 4/4 trample). Energy = 0.\n4. Tap Scattered Groves (G): cast Greenbelt Rampager again. Monument trigger: Rhonas +2/+2 (11/11). ETB: can't pay {E}{E}, Rampager returns to hand, energy = 1.\n5. Tap the last Scattered Groves (G): cast Greenbelt Rampager a third time. Monument trigger: Rhonas +2/+2 (13/13 deathtouch, trample). ETB: can't pay {E}{E} (only 1), Rampager returns to hand, energy = 2.\n6. Longtusk Cub: pay {E}{E} \u2192 second +1/+1 counter (Cub is 5/5 trample via Cartouche of Strength).\n7. Attack with Rhonas (13/13 deathtouch trample; legal since Cub has power 5) and Longtusk Cub (5/5 trample).\n8. Damage check against every block (opponent at 12, blockers have toughness 4/3/2; Rhonas with deathtouch+trample needs to assign only 1 to each blocker):\n   - No blocks: 18.\n   - All three block Rhonas: 10 trample over + 5 from Cub = 15.\n   - All three block Cub: Rhonas unblocked for 13.\n   - Two block Rhonas, one blocks Cub: 11 from Rhonas + at least 1 from Cub (5 \u2212 4 toughness at worst) = 12+.\n   - One blocks Rhonas, two block Cub: 12 from Rhonas alone.\n   Every scenario deals at least 12 \u2014 lethal.",
+  "original_model": null,
+  "output_tokens": 16964,
+  "passed": true,
+  "rollout_cost_usd": 1.07805,
+  "sample_id": "014",
+  "status": "complete",
+  "tool_call_count": 1,
+  "updated_at": "2026-09-06T20:25:02.950994+00:00",
+  "version": null
+}

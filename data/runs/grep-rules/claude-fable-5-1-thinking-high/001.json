@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/claude-fable-5-1-thinking-high/001.json",
+  "judge_cost_usd": 0.048572,
+  "judge_reasoning": "The model's solution correctly replicates the official solution's core combo (Key to the City discard triggering Madness on Welcome to the Fold, countering it with Confirm Suspicions for 3 Clues, then sacrificing 3 Clues + Key to the City to Ravenous Intruder for +8/+8, attacking unblocked for exactly 9 damage). Mana usage (7 total from 5 Islands + 2 Mountains) matches exactly. The stack ordering is correctly handled per Magic rules (LIFO), and the unblockable effect from Key to the City persists as a resolved one-shot effect even after the artifact is later sacrificed. The extra detail about attacking with Ruinous Gremlin is inconsequential. This is essentially the same solution as the official one, just with more granular explanation.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "1. Main phase 1: Activate Key to the City ({T}, discard Welcome to the Fold), targeting Ravenous Intruder (\"can't be blocked this turn\"). Welcome to the Fold has madness, so it is exiled instead of going to the graveyard, and its madness trigger goes on the stack.\n2. Madness trigger resolves: cast Welcome to the Fold for its madness cost {X}{U}{U} with X = 0 (pay {U}{U} with 2 Islands), targeting any creature (e.g., Thriving Ibex).\n3. With Welcome to the Fold on the stack, cast Confirm Suspicions ({3}{U}{U}, paid with 3 Islands + 2 Mountains) targeting Welcome to the Fold. Confirm Suspicions resolves: Welcome to the Fold is countered, and I investigate three times, creating three Clue artifact tokens.\n4. Key to the City's ability resolves: Ravenous Intruder can't be blocked this turn.\n5. Combat: attack with Ravenous Intruder (and Ruinous Gremlin too, for good measure). Ravenous Intruder cannot be blocked; blocks on the Gremlin are irrelevant.\n6. After blockers are declared (or any time during combat before damage), activate Ravenous Intruder's ability four times, sacrificing the three Clue tokens and Key to the City (the \"can't be blocked\" effect persists after Key leaves). Intruder gets +8/+8, becoming 9/10.\n7. Combat damage: the unblockable 9/10 Ravenous Intruder deals 9 damage to the opponent, who is at 9 life. Opponent goes to 0 \u2014 win.",
+  "original_model": null,
+  "output_tokens": 3681,
+  "passed": true,
+  "rollout_cost_usd": 0.26825,
+  "sample_id": "001",
+  "status": "complete",
+  "tool_call_count": 1,
+  "updated_at": "2026-09-05T23:38:01.288613+00:00",
+  "version": null
+}

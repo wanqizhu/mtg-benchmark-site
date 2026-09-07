@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/gpt-5.6-sol-thinking-high/007.json",
+  "judge_cost_usd": 0.153856,
+  "judge_reasoning": "The model's solution uses the same core combo as the official solution (Uncaged Fury + Savage Alliance on Bearer for double strike/trample, Savage Alliance's ping mode softening up the Plants, and sacrificing Clues to Ravenous Intruder to pump it via trample-assignment tricks), just with a slightly different casting order and clue-sacrifice timing. The mana costs work out exactly (7 total mana from 7 lands), the buff math for Bearer (6/5 double strike trample) matches, and the combat math correctly shows total damage = 19-(k+j) where k+j is the total Plants used to block (max 3), yielding a guaranteed minimum of exactly 16 damage regardless of the opponent's blocking assignment. This is a valid, rules-legal execution of the same essential strategy as the official solution.",
+  "judged": true,
+  "model": "gpt-5.6-sol-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "context": "all_turns",
+      "summary": "auto"
+    }
+  },
+  "model_id": "gpt-5.6-sol",
+  "model_solution": "1. Cast **Uncaged Fury** targeting **Bearer of Overwhelming Truths**. Its prowess and **Trail of Evidence** trigger; investigate to create a Clue.\n2. Cast **Savage Alliance**, paying its escalate cost for a total of {3}{R}. Choose:\n   - Creatures you control gain trample until end of turn.\n   - Savage Alliance deals 1 damage to each creature the opponent controls.\n   \n   This triggers prowess and Trail again, creating a second Clue. Each Plant is now a 1/2 with 1 damage marked.\n3. Sacrifice both Clues to **Ravenous Intruder**, giving it +4/+4.\n4. Attack the opponent with Bearer and Ravenous Intruder. Bearer is a **6/5 with double strike and trample**; Intruder is a **5/6 with trample**.\n5. Let \\(k\\) Plants block Bearer and \\(j\\) Plants block Intruder. Since there are only three Plants, \\(k+j\\leq3\\).\n6. In the first combat-damage step, Bearer needs to assign only 1 damage to each Plant blocking it, because each already has 1 damage marked. It therefore deals \\(6-k\\) damage to the opponent and kills all its blockers.\n7. Bearer\u2019s combat-damage trigger investigates. Before the normal combat-damage step, sacrifice this new Clue to Ravenous Intruder, making it **7/8**.\n8. In the normal combat-damage step, Bearer tramples for 6 because its blockers are gone, while Intruder assigns 1 damage to each of its \\(j\\) blockers and tramples over for \\(7-j\\).\n\nTotal damage is\n\\[\n(6-k)+6+(7-j)=19-(k+j)\\geq16.\n\\]\nThus even if all three Plants block, the opponent takes exactly 16 damage.",
+  "original_model": null,
+  "output_tokens": 5403,
+  "passed": true,
+  "rollout_cost_usd": 0.141819,
+  "sample_id": "007",
+  "status": "complete",
+  "tool_call_count": 3,
+  "updated_at": "2026-09-06T19:45:49.914981+00:00",
+  "version": null
+}

@@ -1,0 +1,27 @@
+{
+  "detail_path": "data/runs/grep-rules/grok-4.6-high/019.json",
+  "judge_cost_usd": 0.269616,
+  "judge_reasoning": "The model's plan requires 6 total mana (3 for Scorpion God's -1/-1 ability, 2 for equip, 1 for Skirsdag Supplicant) but only has 5 lands plus one land drawn via the -1/-1-counter-death trigger. That drawn Swamp must be played as a land to reach 6 mana, but the plan also needs it as a second discard card (for Skirsdag Supplicant's activation) after Precise Strike is already discarded for Key to the City. The same card cannot both be played as a land and discarded, creating an unresolvable resource shortfall (either insufficient mana or insufficient discard fodder). As a result, Skirsdag Supplicant's ability cannot actually be activated, leaving the opponent at 2 life instead of 0. The official solution avoids this problem by skipping the costly -1/-1 counter step and instead using Scorpion God's own death-return trigger to supply a 'free' discard card for Supplicant, keeping mana and discards perfectly balanced. The model's solution therefore fails to guarantee the win.",
+  "judged": true,
+  "model": "grok-4.6-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": null
+  },
+  "model_id": "grok-4.6",
+  "model_solution": "1. Activate The Scorpion God targeting Furyblade Vampire, putting a -1/-1 counter on it.\n2. Equip Stitcher's Graft to The Scorpion God (Furyblade Vampire is sacrificed and dies with a -1/-1 counter; draw a Swamp).\n3. Play the Swamp.\n4. Activate Key to the City, discarding Precise Strike and targeting The Scorpion God.\n5. Activate Skirsdag Supplicant, discarding the remaining card in hand.\n6. Attack with The Scorpion God.",
+  "original_model": null,
+  "output_tokens": 63840,
+  "passed": false,
+  "rollout_cost_usd": 0.574148,
+  "sample_id": "019",
+  "status": "complete",
+  "tool_call_count": 5,
+  "updated_at": "2026-09-06T21:13:46.833077+00:00",
+  "version": null
+}

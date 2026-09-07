@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/gpt-5.6-sol-thinking-high/001.json",
+  "judge_cost_usd": 0.06176,
+  "judge_reasoning": "The model solution is functionally identical to the official solution: it uses Key to the City to make Ravenous Intruder unblockable while discarding Welcome to the Fold, casts Welcome to the Fold via madness (X=0), counters it with Confirm Suspicions to generate three Clues, sacrifices the three Clues and Key to the City to Ravenous Intruder for +8/+8 (making it a 9/10), and attacks unblocked for exactly 9 lethal damage. Mana costs work out exactly (7 total mana used, matching the 7 available lands with sufficient blue sources). The model also correctly notes that the unblockable effect persists after the Key is sacrificed, which is accurate rules interpretation. This is a valid, correct execution of the same combo as the official solution.",
+  "judged": true,
+  "model": "gpt-5.6-sol-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "context": "all_turns",
+      "summary": "auto"
+    }
+  },
+  "model_id": "gpt-5.6-sol",
+  "model_solution": "1. Activate **Key to the City**, tapping it and discarding **Welcome to the Fold**. Target **Ravenous Intruder**, so it can\u2019t be blocked this turn.\n2. Exile Welcome to the Fold via madness, then cast it with **X = 0**, paying only **{U}{U}**. Its target may be any creature; the toughness check matters only if it resolves.\n3. While Welcome to the Fold is on the stack, cast **Confirm Suspicions** for **{3}{U}{U}**, targeting your own Welcome to the Fold. This uses all seven lands.\n4. Confirm Suspicions counters Welcome to the Fold and investigates three times, creating three Clue artifact tokens.\n5. Activate Ravenous Intruder four times, sacrificing **Key to the City** and all three Clues. It gets a total of **+8/+8**, becoming **9/10**.\n6. Attack with Ravenous Intruder. Key to the City\u2019s effect still applies after the Key is sacrificed, so the Intruder cannot be blocked and deals 9 lethal damage.",
+  "original_model": null,
+  "output_tokens": 2211,
+  "passed": true,
+  "rollout_cost_usd": 0.051247,
+  "sample_id": "001",
+  "status": "complete",
+  "tool_call_count": 0,
+  "updated_at": "2026-09-06T19:29:21.691080+00:00",
+  "version": null
+}

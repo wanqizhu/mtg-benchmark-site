@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/011.json",
+  "judge_cost_usd": 0.05114,
+  "judge_reasoning": "The model solution correctly executes the same core line as the official solution: casting Quarry Hauler to boost Kiora to 8 loyalty, using -8 to create three Octopus tokens whose emblem-triggered fights kill one Colossus (via two Octopi) and the player's own Festering Mummy (via the third Octopi), triggering Hapatra to make a deathtouch Snake that kills the second Colossus via the still-active emblem, then attacking for exactly 4 lethal damage with Hapatra and Weaver of Currents. All rules interactions (targeting own creatures with fight, deathtouch destroying via combat, mana math for casting Quarry Hauler) are handled correctly, and the sequence achieves the win condition against any reasonable line.",
+  "judged": true,
+  "model": "gpt-6-astra-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "context": "all_turns",
+      "summary": "auto"
+    }
+  },
+  "model_id": "gpt-6-astra",
+  "model_solution": "1. **Cast Quarry Hauler using your four lands**, leaving Weaver of Currents untapped. Target Kiora with the Hauler\u2019s enters ability and add a loyalty counter, raising her from **7 to 8**. Do not activate Kiora\u2019s +1.\n\n2. **Activate Kiora\u2019s \u22128.** You get the fight emblem and create three 8/8 Octopuses, triggering the emblem three times. Choose targets and order those triggers to resolve as follows:\n   - First Octopus fights the first Metalwork Colossus.\n   - Second Octopus fights that same Colossus.\n   - Third Octopus fights your own Festering Mummy.\n\n3. **Resolve the fights.** The first two Octopuses each deal 8 damage to the first Colossus, killing it with 16 total damage; both Octopuses also die. The third Octopus kills Festering Mummy and survives. Fighting your own creature is legal\u2014the emblem says \u201ctarget creature,\u201d not \u201ctarget creature an opponent controls\u201d (CR 701.14a).\n\n4. **Use Festering Mummy\u2019s death trigger** to put a \u22121/\u22121 counter on the remaining Colossus. This triggers Hapatra, creating a **1/1 Snake with deathtouch**. The Snake\u2019s entry triggers Kiora\u2019s emblem; have it fight the remaining Colossus. Both die: deathtouch applies to fight damage, so the Snake\u2019s 1 damage destroys the Colossus (CR 702.2b).\n\n5. **Attack with Hapatra and Weaver of Currents.** Both remain untapped and able to attack. With both opposing creatures dead, they deal **2 + 2 = 4 combat damage**, killing your opponent.",
+  "original_model": null,
+  "output_tokens": 1667,
+  "passed": true,
+  "rollout_cost_usd": 0.171278,
+  "sample_id": "011",
+  "status": "complete",
+  "tool_call_count": 4,
+  "updated_at": "2026-09-06T20:19:20.277011+00:00",
+  "version": null
+}

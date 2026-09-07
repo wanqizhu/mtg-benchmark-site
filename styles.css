@@ -66,6 +66,19 @@ h1, h2, h3 { margin: 0; }
 h1 { font-size: clamp(24px, 4vw, 40px); }
 h2 { font-size: 24px; margin-bottom: 14px; }
 h3 { font-size: 17px; margin-bottom: 10px; }
+.subtitle {
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+}
+.title-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.title-link:hover { color: var(--accent); }
 
 nav, .topbar-controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: end; }
 .run-picker {
@@ -150,11 +163,6 @@ button:hover, .link-button:hover, button.active { border-color: var(--accent); c
   box-shadow: 0 1px 0 rgba(0,0,0,.03);
 }
 
-.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-bottom: 18px; }
-.stat { background: var(--panel-strong); border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
-.stat .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
-.stat .value { font-size: 24px; font-weight: 750; margin-top: 4px; }
-
 table { width: 100%; border-collapse: collapse; }
 th, td { border-bottom: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; }
 th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
@@ -196,6 +204,10 @@ tr.clickable:hover { background: color-mix(in srgb, var(--accent) 8%, transparen
 }
 .problem-source-panel {
   min-width: 0;
+}
+.problem-source-link {
+  margin: 10px 0 0;
+  font-size: 14px;
 }
 .scroll-md {
   max-height: 720px;

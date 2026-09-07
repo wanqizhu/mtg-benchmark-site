@@ -1,0 +1,27 @@
+{
+  "detail_path": "data/runs/grep-rules/grok-4.6-high/011.json",
+  "judge_cost_usd": 0.078664,
+  "judge_reasoning": "The model's solution follows the same core strategy as the official solution: cast Quarry Hauler to boost Kiora to 8 loyalty, activate the -8 ultimate for three Octopus tokens and the fight emblem, use two Octopi to kill one Colossus while the third kills Festering Mummy, chain Mummy's death trigger into a Hapatra Snake token, use the Snake's deathtouch to kill the second Colossus, then swing for exactly 4 lethal damage with Hapatra and Weaver of Currents. The model is slightly vague about which creature receives the -1/-1 counter (the official solution specifies avoiding the 2-power attackers), but since Hapatra's trigger works regardless of target and a safe, obvious target (the enemy Colossus, already destined to die) is available, this omission doesn't invalidate the solution. The overall line is essentially the same, so this passes.",
+  "judged": true,
+  "model": "grok-4.6-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": null
+  },
+  "model_id": "grok-4.6",
+  "model_solution": "1. Cast Quarry Hauler targeting Kiora, Master of the Depths, choosing to put an additional loyalty counter on her (now at 8 loyalty).\n2. Activate Kiora\u2019s \u22128 ability, gaining the emblem and creating three 8/8 Octopus tokens.\n3. The tokens enter and the emblem triggers for each. Have two Octopuses fight one Metalwork Colossus and the third Octopus fight Festering Mummy.\n4. Resolve the fight against Festering Mummy first (Mummy dies). Use Mummy\u2019s death trigger to put a \u22121/\u22121 counter on a creature, creating a Snake token via Hapatra. Have the Snake (deathtouch) fight the remaining Metalwork Colossus (both die).\n5. Resolve the remaining fights; the first Colossus dies.\n6. Attack with Hapatra and Weaver of Currents (4 damage, unblocked).",
+  "original_model": null,
+  "output_tokens": 72174,
+  "passed": true,
+  "rollout_cost_usd": 0.71683,
+  "sample_id": "011",
+  "status": "complete",
+  "tool_call_count": 13,
+  "updated_at": "2026-09-06T21:18:10.860363+00:00",
+  "version": null
+}

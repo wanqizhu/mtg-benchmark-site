@@ -1,0 +1,29 @@
+{
+  "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/007.json",
+  "judge_cost_usd": 0.14117,
+  "judge_reasoning": "The model's solution correctly uses the same core strategy as the official solution (Savage Alliance for trample + softening the plant blockers, Uncaged Fury for double strike on Bearer, killing blockers with first-strike lethal damage to get full trample damage in the regular step, and pumping Ravenous Intruder via Clue sacrifices), just with clues sacrificed eagerly instead of all at once. The final creature stats and combat math are functionally identical (Bearer 6/5 double strike trample, Ravenous Intruder 7/8 trample), and the model rigorously verifies the damage formula 19-(k_A+k_B) is always at least 16 for any blocking assignment (k_A+k_B \u2264 3), guaranteeing lethal in all cases.",
+  "judged": true,
+  "model": "claude-sonnet-5-thinking-high",
+  "model_config": {
+    "max_token_continues": 5,
+    "max_tokens": 64000,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-sonnet-5",
+  "model_solution": "1. **Cast Savage Alliance** (paying {3}{R} = 4 mana: base {2}{R} plus Escalate {1} for a second mode), choosing:\n   - \"Creatures target player controls gain trample until end of turn\" \u2014 target yourself (Bearer of Overwhelming Truths and Ravenous Intruder both gain trample).\n   - \"Savage Alliance deals 1 damage to each creature target opponent controls\" \u2014 target the opponent, putting 1 damage on each of the three 0/1+1/1-counter Plant tokens (each is now a 1/2 with 1 damage marked, so only 1 more damage is needed to kill any of them).\n   - This cast triggers Bearer's Prowess (+1/+1) and Trail of Evidence (investigate \u2192 Clue #1).\n\n2. **Sacrifice Clue #1** to Ravenous Intruder's ability (+2/+2).\n\n3. **Cast Uncaged Fury** (paying {2}{R} = 3 mana) targeting Bearer of Overwhelming Truths, giving it +1/+1 and double strike. This triggers Prowess again (+1/+1) and Trail of Evidence again (investigate \u2192 Clue #2).\n\n4. **Sacrifice Clue #2** to Ravenous Intruder's ability (+2/+2).\n\n   All 7 lands are now tapped. At this point:\n   - Bearer of Overwhelming Truths is 6/5 (3/2 base + 2 Prowess triggers + Uncaged Fury's own +1/+1), with **double strike** and **trample**.\n   - Ravenous Intruder is 5/6 (1/2 base + two +2/+2 sacrifices), with **trample**.\n   - All three opposing Plants are weakened 1/2s (only 1 more damage needed to kill each).\n\n5. **Attack with both Bearer of Overwhelming Truths and Ravenous Intruder**, targeting the opponent.\n\n6. **Opponent declares blockers** in any combination among the three weakened Plants (say k_A block Bearer, k_B block Ravenous Intruder, k_A+k_B \u2264 3).\n\n7. **First-strike combat damage step:** Bearer assigns 1 damage (lethal, due to prior marked damage) to each of its k_A blockers \u2014 killing them all \u2014 and tramples the remaining (6 \u2212 k_A) damage to the opponent. Since Bearer dealt combat damage to the opponent, its own ability triggers **investigate**, creating Clue #3.\n\n8. **Before the regular damage step, sacrifice Clue #3** to Ravenous Intruder (+2/+2), making it a 7/8.\n\n9. **Regular combat damage step:** Since all of Bearer's blockers died in the first-strike step, by rule 702.19d Bearer (still trampling) assigns its *full* power (6) to the opponent. Ravenous Intruder assigns 1 damage (lethal) to each of its k_B blockers and tramples the remaining (7 \u2212 k_B) to the opponent.\n\n**Total damage = (6 \u2212 k_A) + 6 + (7 \u2212 k_B) = 19 \u2212 (k_A + k_B).**\n\nSince the opponent has at most 3 creatures to use as blockers, k_A + k_B \u2264 3, so the *minimum* possible total damage is 19 \u2212 3 = **16**, exactly enough to reduce the opponent from 16 life to 0 \u2014 and any less aggressive blocking (or no blocking) only deals more damage. This holds for every possible blocking assignment, guaranteeing a win this turn.",
+  "original_model": null,
+  "output_tokens": 71549,
+  "passed": true,
+  "rollout_cost_usd": 0.772708,
+  "sample_id": "007",
+  "status": "complete",
+  "tool_call_count": 2,
+  "updated_at": "2026-08-27T04:11:55.016308+00:00",
+  "version": null
+}

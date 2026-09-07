@@ -1,0 +1,27 @@
+{
+  "detail_path": "data/runs/grep-rules/grok-4.6-high/017.json",
+  "judge_cost_usd": 0.390576,
+  "judge_reasoning": "The model correctly identifies and uses the key double-Panharmonicon interaction (opponent's Panharmonicon doubling Trespasser's Curse, the player's Panharmonicon doubling Olivia's trigger), and additionally uses a valid Madness-via-Olivia-discard interaction to cheaply cast Bloodhall Priest with haste. Careful verification of life totals (you: 7\u21925\u21923\u21921, opponent: 2\u21924\u21926\u21928\u21926 after Priest's attack trigger), mana costs (exactly 6 mana available and used), and combat math (14 total power, opponent's best block only prevents 8 damage, leaving exactly 6 through for exact lethal against any legal blocking assignment) confirms this line is rules-legal and guarantees a win this turn. It differs from the official line's specific sequencing (which seems to generate an extra Servo and hard-cast Bloodhall Priest) but is an independently valid solution.",
+  "judged": true,
+  "model": "grok-4.6-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": null
+  },
+  "model_id": "grok-4.6",
+  "model_solution": "1. Cast Metallic Mimic (pay {2}), choosing any creature type.\n2. Trespasser's Curse triggers twice (lose 2 life, opponent gains 2). Resolve one Olivia trigger: discard Essence Extraction to put a +1/+1 counter on Metallic Mimic and give it haste.\n3. Animation Module triggers; pay {1} to create a Servo token.\n4. Trespasser's Curse triggers twice (lose 2 life, opponent gains 2). Resolve both Olivia triggers on the Servo: discard Warfire Javelineer and Bloodhall Priest, putting two +1/+1 counters on the Servo and giving it haste.\n5. Cast Bloodhall Priest for its madness cost (pay {1}{B}{R}).\n6. Trespasser's Curse triggers twice (lose 2 life, opponent gains 2). Resolve one Olivia trigger: discard Swamp to put a +1/+1 counter on Bloodhall Priest and give it haste.\n7. Attack with Olivia (3/3 flying), Metallic Mimic (3/2), the Servo (3/3), and Bloodhall Priest (5/5). Bloodhall Priest's attack trigger deals 2 damage to the opponent.",
+  "original_model": null,
+  "output_tokens": 40694,
+  "passed": true,
+  "rollout_cost_usd": 0.33374,
+  "sample_id": "017",
+  "status": "complete",
+  "tool_call_count": 4,
+  "updated_at": "2026-09-06T21:04:17.716696+00:00",
+  "version": null
+}

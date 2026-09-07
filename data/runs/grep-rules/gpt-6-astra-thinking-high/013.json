@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/013.json",
+  "judge_cost_usd": 0.144756,
+  "judge_reasoning": "The model solution uses the same core combo as the official solution (double-activating Pathmaker Initiate via Djeru's Resolve reset, casting Consuming Fervor on Kari Zev then bouncing/recasting it on Ragavan between first strike and regular combat damage steps), just with Djeru's Resolve cast earlier in the turn. All targeting is legal (Kari Zev and Ragavan both have power \u22642 when targeted by Pathmaker Initiate before Consuming Fervor increases their power), all mana costs are correctly paid using exactly the 5 available lands, and the timing windows (declare attackers step, and the priority window between first-strike and regular combat damage) are rules-legal. The final damage total is 5 (first strike from Kari Zev) + 5 (regular damage from Ragavan) = 10, reducing the opponent from 10 to 0 life. This is a valid, legal execution of the same winning line.",
+  "judged": true,
+  "model": "gpt-6-astra-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "context": "all_turns",
+      "summary": "auto"
+    }
+  },
+  "model_id": "gpt-6-astra",
+  "model_solution": "1. Tap **Pathmaker Initiate**, targeting **Kari Zev**. With Hedron Blade, she is 2/4, so she is a legal target. Let the ability resolve: she can\u2019t be blocked this turn.\n\n2. Cast **Djeru\u2019s Resolve** on Pathmaker Initiate using one Irrigated Farmland for {W}, untapping it.\n\n3. Attack with **Kari Zev**. Resolve her trigger, creating **Ragavan** tapped and attacking your opponent.\n\n4. Still in the declare attackers step, tap Pathmaker Initiate targeting Ragavan. Let the ability resolve. **Both attackers now can\u2019t be blocked.**\n\n5. Using **Sigarda\u2019s Aid**, cast **Consuming Fervor** on Kari Zev for {R} from a Spirebluff Canal. She becomes **5/7**. Increasing her power does not undo Pathmaker\u2019s resolved effect: the targeting restriction was checked on resolution, and the effect lasts for the turn (CR 608.2b, 611.2a).\n\n6. Proceed to first-strike combat damage. Kari Zev deals **5 damage**, leaving your opponent at **5 life**.\n\n7. After first-strike damage, before regular combat damage, cast **Disperse** targeting Consuming Fervor. Pay with your remaining Irrigated Farmland and a second Spirebluff Canal. Return the Aura to your hand, then use your final Canal for {R} to **recast Consuming Fervor on Ragavan**, again using Sigarda\u2019s Aid. This timing is legal because players receive priority after first-strike damage, before the second combat damage step (CR 510.3\u2013510.4).\n\n8. Ragavan is now **5/4** and deals **5 damage** in the regular combat damage step. Your opponent reaches **0 life**.\n\nAll five lands are used, and neither attacker can legally be blocked.",
+  "original_model": null,
+  "output_tokens": 1205,
+  "passed": true,
+  "rollout_cost_usd": 0.120657,
+  "sample_id": "013",
+  "status": "complete",
+  "tool_call_count": 4,
+  "updated_at": "2026-09-06T20:19:10.173979+00:00",
+  "version": null
+}

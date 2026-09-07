@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/claude-fable-5-1-thinking-high/013.json",
+  "judge_cost_usd": 0.100154,
+  "judge_reasoning": "The model's solution uses the same core combo as the official solution (unblockable Kari Zev + Ragavan, Consuming Fervor swapped from Kari to Ragavan between first strike and regular damage steps via Disperse), just with different timing enabled by Sigarda's Aid's flash-granting ability. The mana costs total exactly 5 mana, matching the 5 available lands with correct color requirements. All targeting is legal, and the damage total (5 first strike + 5 regular = 10) exactly matches the opponent's life total, achieving the win condition.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "1. Main phase 1: Activate Pathmaker Initiate ({T}): target Kari Zev, Skyship Raider (power 2 with Hedron Blade) \u2014 Kari can't be blocked this turn.\n2. Declare attackers: Attack with Kari Zev only. Her trigger creates Ragavan (2/1), tapped and attacking.\n3. Still in the declare attackers step, cast Djeru's Resolve ({W}, Irrigated Farmland) targeting Pathmaker Initiate to untap it. Then activate Pathmaker again ({T}): target Ragavan (power 2) \u2014 Ragavan can't be blocked this turn.\n4. Declare blockers: neither attacker can be blocked, so no blocks are possible (the opponent has no mana and no relevant actions).\n5. In the declare blockers step, cast Consuming Fervor ({R}, Spirebluff Canal) with flash via Sigarda's Aid, enchanting Kari Zev \u2192 Kari is 5/7 first strike.\n6. First-strike combat damage step: Kari deals 5 to the opponent (10 \u2192 5).\n7. After first-strike damage, with priority before the regular combat damage step: cast Disperse ({1}{U}, Irrigated Farmland + Spirebluff Canal) targeting Consuming Fervor, returning it to your hand.\n8. Cast Consuming Fervor again ({R}, last Spirebluff Canal) with flash, enchanting Ragavan \u2192 Ragavan is 5/4.\n9. Regular combat damage step: Ragavan (no first strike) deals 5 to the opponent (5 \u2192 0). Opponent loses.",
+  "original_model": null,
+  "output_tokens": 41046,
+  "passed": true,
+  "rollout_cost_usd": 2.52091,
+  "sample_id": "013",
+  "status": "complete",
+  "tool_call_count": 1,
+  "updated_at": "2026-09-06T20:29:16.961190+00:00",
+  "version": null
+}

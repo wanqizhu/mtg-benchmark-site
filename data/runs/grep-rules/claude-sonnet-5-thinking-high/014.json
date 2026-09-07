@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/014.json",
+  "judge_cost_usd": 0.0,
+  "judge_reasoning": "No final answer provided.",
+  "judged": true,
+  "model": "claude-sonnet-5-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-sonnet-5",
+  "model_solution": null,
+  "original_model": null,
+  "output_tokens": 128000,
+  "passed": false,
+  "rollout_cost_usd": 1.286538,
+  "sample_id": "014",
+  "status": "complete",
+  "tool_call_count": 0,
+  "updated_at": "2026-09-06T20:48:05.324610+00:00",
+  "version": null
+}

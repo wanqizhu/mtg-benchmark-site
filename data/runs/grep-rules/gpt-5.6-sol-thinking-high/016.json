@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/gpt-5.6-sol-thinking-high/016.json",
+  "judge_cost_usd": 0.071966,
+  "judge_reasoning": "The model's solution follows the same core sequence as the official solution: Cartouche of Zeal is cast on Alley Strangler and used to make one 5-toughness flier (Olivia) unable to block; Alley Strangler (with the Cartouche) is then donated via Harmless Offering, causing the Aura to fall off via state-based action and enabling Revolt; Fatal Push then destroys the other 5-toughness flier (Drana, MV 3) thanks to Revolt; Glorybringer's exert trigger kills Drana's Emissary before blocks; and the unblockable Glorybringer + Goldnight Castigator deal exactly 8 damage for lethal. Mana costs and timing all check out correctly. This is essentially the same line as the official solution, just with explicit creature assignments.",
+  "judged": true,
+  "model": "gpt-5.6-sol-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "context": "all_turns",
+      "summary": "auto"
+    }
+  },
+  "model_id": "gpt-5.6-sol",
+  "model_solution": "1. Cast **Cartouche of Zeal** on **Alley Strangler**, using a Mountain. When the Cartouche enters, target **Olivia, Mobilized for War**; Olivia can\u2019t block this turn.\n2. Cast **Harmless Offering**, using your other Mountain and two Swamps, giving the enchanted **Alley Strangler** to your opponent.\n3. Because you still control the Cartouche but no longer control the creature it enchants, the Cartouche is put into your graveyard as a state-based action. This enables revolt.\n4. Cast **Fatal Push** with your remaining Swamp, destroying **Drana, Liberator of Malakir**. Its mana value is 3, so revolt allows it to be destroyed.\n5. Attack with **Glorybringer** and **Goldnight Castigator**. Exert Glorybringer and have its trigger deal 4 damage to **Drana\u2019s Emissary**, destroying the 4/4.\n6. Olivia cannot block, and the donated Alley Strangler cannot block either flying attacker. Glorybringer and Goldnight Castigator deal 4 damage each, for exactly 8 lethal damage.",
+  "original_model": null,
+  "output_tokens": 2319,
+  "passed": true,
+  "rollout_cost_usd": 0.054392,
+  "sample_id": "016",
+  "status": "complete",
+  "tool_call_count": 0,
+  "updated_at": "2026-09-06T20:20:14.211929+00:00",
+  "version": null
+}

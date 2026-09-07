@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/grep-rules/claude-fable-5-1-thinking-high/011.json",
+  "judge_cost_usd": 0.049638,
+  "judge_reasoning": "The model solution follows the same core line as the official solution: cast Quarry Hauler to push Kiora to 8 loyalty, use -8 to create three Octopi and the fight emblem, use two Octopi to kill one Colossus, sacrifice the third Octopus fight against Festering Mummy to trigger its death ability, which triggers Hapatra to make a deathtouch Snake, which kills the second Colossus via the emblem trigger, clearing the way for lethal combat damage with Hapatra and Weaver of Currents. The only difference is the target of Festering Mummy's -1/-1 counter (placed on the remaining Colossus rather than an unrelated permanent), which is inconsequential since Hapatra's trigger fires regardless of target, and the deathtouch fight kills the Colossus regardless of its toughness. Mana, timing, and legality checks all hold up.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "1. Tap both Forests and both Fetid Pools for {G}{G}{U/B}{U/B} and cast Quarry Hauler ({3}{G}). Do NOT tap Weaver of Currents for mana \u2013 it needs to stay untapped to attack.\n2. Quarry Hauler's ETB targets Kiora, Master of the Depths: the only kind of counter on her is loyalty, so put another loyalty counter on her. Kiora goes to 8 loyalty. (No loyalty ability has been activated yet this turn, so \u22128 is still available.)\n3. Activate Kiora's \u22128: get the emblem \"Whenever a creature you control enters, you may have it fight target creature,\" then create three 8/8 Octopus tokens. All three Octopuses enter and trigger the emblem:\n   - Octopus A fights Metalwork Colossus #1 (8 damage).\n   - Octopus B fights Metalwork Colossus #1 (8 more damage = 16 \u2265 10 toughness; Colossus #1 dies).\n   - Octopus C fights our own Festering Mummy: Mummy takes 8 and dies.\n4. Festering Mummy's death trigger: put a -1/-1 counter on Metalwork Colossus #2 (now 9/9). Hapatra triggers (\"whenever you put one or more -1/-1 counters on a creature\") and creates a 1/1 green Snake with deathtouch.\n5. The Snake enters \u2192 emblem triggers \u2192 the Snake fights Metalwork Colossus #2. The Snake deals 1 deathtouch damage to Colossus #2, which is destroyed as a state-based action (rule 702.2b).\n   - The opponent can never use the Colossus graveyard ability: when Colossus #1 hits the graveyard they control only one artifact (Colossus #2), and after Colossus #2 dies they control none, so \"Sacrifice two artifacts\" can't be paid.\n6. Go to combat and attack with Hapatra, Vizier of Poisons (2/2) and Weaver of Currents (2/2). The opponent has no creatures left to block and no other permanents or cards.\n7. 4 combat damage is dealt to the opponent, who is at 4 life \u2192 opponent goes to 0 and loses.",
+  "original_model": null,
+  "output_tokens": 6697,
+  "passed": true,
+  "rollout_cost_usd": 0.458,
+  "sample_id": "011",
+  "status": "complete",
+  "tool_call_count": 1,
+  "updated_at": "2026-09-06T20:22:14.010285+00:00",
+  "version": null
+}

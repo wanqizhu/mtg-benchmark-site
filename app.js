@@ -177,8 +177,17 @@ function formatCount(value) {
   return Number(value || 0).toLocaleString();
 }
 
+function runLabel(runId) {
+  const run = (MANIFEST?.runs || []).find((item) => item.run_id === runId);
+  return run?.label || runId || "";
+}
+
+function isGrepRules(runId) {
+  return runId === "grep-rules" || runId === "tools-rules";
+}
+
 function showToolCalls(row) {
-  return (row.version || DATA.run_id || "") === "tools-rules";
+  return isGrepRules(row.version || DATA.run_id || "");
 }
 
 function rolloutUsage(row) {
@@ -188,7 +197,7 @@ function rolloutUsage(row) {
 }
 
 function modelVersionName(modelName, runId) {
-  return `${modelName} @ ${runId}`;
+  return `${modelName} @ ${runLabel(runId)}`;
 }
 
 function sampleSortKey(sampleId) {
@@ -303,8 +312,14 @@ function realRuns() {
   return (MANIFEST?.runs || []).filter((item) => !item.virtual);
 }
 
+function assetUrl(path) {
+  const stamp = MANIFEST?.generated_at;
+  if (!stamp) return path;
+  return `${path}${path.includes("?") ? "&" : "?"}v=${encodeURIComponent(stamp)}`;
+}
+
 async function fetchJson(path) {
-  const response = await fetch(path);
+  const response = await fetch(assetUrl(path));
   if (!response.ok) {
     throw new Error(`${path} (${response.status})`);
   }
@@ -403,13 +418,11 @@ async function applyRoute(route = parseHash()) {
   } catch (error) {
     if (seq !== routeSeq) return;
     DATA = null;
-    document.querySelector("#run-title").textContent = "Could not load run";
     app.innerHTML = `<section class="card"><h2>Could not load run data</h2><pre>${esc(error.stack || error.message || error)}</pre></section>`;
     return;
   }
   if (seq !== routeSeq) return;
 
-  document.querySelector("#run-title").textContent = DATA ? (DATA.label || `Run ${DATA.run_id}`) : "No runs found";
   const selector = document.querySelector("#run-select");
   if (selector && DATA) selector.value = DATA.run_id;
 
@@ -453,34 +466,25 @@ function setView(view) {
   }
 }
 
-function renderStats() {
-  const judged = DATA.leaderboard.reduce((sum, row) => sum + row.judged, 0);
-  const passed = DATA.leaderboard.reduce((sum, row) => sum + row.passed, 0);
-  const cost = DATA.leaderboard.reduce((sum, row) => sum + row.total_cost_usd, 0);
-  return `<section class="stat-grid">
-    <div class="stat"><div class="label">Models</div><div class="value">${DATA.leaderboard.length}</div></div>
-    <div class="stat"><div class="label">Problems</div><div class="value">${DATA.problems.length}</div></div>
-    <div class="stat"><div class="label">Judged</div><div class="value">${judged}</div></div>
-    <div class="stat"><div class="label">Pass Rate</div><div class="value">${pct(judged ? passed / judged : 0)}</div></div>
-    <div class="stat"><div class="label">Cost</div><div class="value">${money(cost)}</div></div>
-  </section>`;
+function showVersionColumn() {
+  return DATA.run_id === "all-versions";
 }
 
 function renderLeaderboard() {
   const tools = DATA.leaderboard.some((row) => showToolCalls(row));
-  app.innerHTML = `${renderStats()}
-    <section class="card">
+  const versions = showVersionColumn();
+  app.innerHTML = `<section class="card">
       <h2>Leaderboard</h2>
       <table>
         <thead><tr>
-          <th>Rank</th><th>Model</th><th>Version</th><th>Pass Rate</th><th>Passed</th>
+          <th>Rank</th><th>Model</th>${versions ? "<th>Version</th>" : ""}<th>Pass Rate</th><th>Passed</th>
           <th>Tokens</th>${tools ? "<th>Tools</th>" : ""}<th>Cost</th>
         </tr></thead>
         <tbody>
           ${DATA.leaderboard.map((row) => `<tr class="clickable" data-model="${esc(row.name)}">
             <td>${row.rank}</td>
-            <td><strong>${esc(row.original_model || row.name)}</strong><br><span class="muted">${esc(row.model_id)}</span></td>
-            <td>${esc(row.version || DATA.run_id)}</td>
+            <td><strong>${esc(row.original_model || row.name)}</strong></td>
+            ${versions ? `<td>${esc(runLabel(row.version || DATA.run_id))}</td>` : ""}
             <td>${pct(row.pass_rate)}</td>
             <td>${row.passed}/${row.judged}</td>
             <td>${formatCount(row.output_tokens)}</td>
@@ -533,7 +537,7 @@ async function renderProblems(selectedId = DATA.problems[0]?.id, seq = routeSeq)
       <div class="list">
         ${DATA.problems.map((item) => `<button data-problem="${esc(item.id)}" class="${item.id === problem.id ? "active" : ""}">
           <strong>Problem ${esc(item.id)}</strong><br>
-          <span class="muted">${esc(item.difficulty)} · ${item.passed}/${item.judged} passed · ${item.attempted} attempts</span>
+          <span class="muted">${esc(item.difficulty)} · ${item.passed}/${item.judged} passed</span>
         </button>`).join("")}
       </div>
     </aside>
@@ -558,11 +562,16 @@ function renderProblemDetail(problem, detail) {
   const image = published ? detail.image : null;
   const gold = published ? detail.problem_gold_md : "";
   const solution = published ? detail.solution_text : "";
+  const sourceUrl = published ? detail.source_url : "";
+  const sourceLink = sourceUrl
+    ? `<p class="problem-source-link"><a class="title-link" href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">Original problem page</a></p>`
+    : "";
   const body = published
     ? `<div class="problem-source-grid">
         <div class="problem-source-panel">
           <h3>Original Image</h3>
           ${image ? `<img class="problem-image" data-zoom src="${esc(image)}" alt="Problem ${esc(problem.id)} image">` : `<p class="muted">No image found for this problem.</p>`}
+          ${sourceLink}
         </div>
         <div class="problem-source-panel">
           <h3>Parsed Problem</h3>
@@ -588,7 +597,7 @@ function renderProblemDetail(problem, detail) {
 }
 
 function renderOutcomeRow(row) {
-  const label = `${esc(row.original_model || row.model)}${row.version ? ` · ${esc(row.version)}` : ""}`;
+  const label = `${esc(row.original_model || row.model)}${row.version ? ` · ${esc(runLabel(row.version))}` : ""}`;
   if (row.status === "not_attempted") {
     return `<tr>
       <td><span class="muted">${label}</span></td>
@@ -628,7 +637,7 @@ function renderModels(selectedName = DATA.models[0]?.name) {
       <div class="list">
         ${DATA.models.map((item) => `<button data-model-list="${esc(item.name)}" class="${item.name === model.name ? "active" : ""}">
           <strong>${esc(item.original_model || item.name)}</strong><br>
-          <span class="muted">${item.version ? `${esc(item.version)} · ` : ""}${pct(item.pass_rate)} · ${item.passed}/${item.judged}</span>
+          <span class="muted">${item.version ? `${esc(runLabel(item.version))} · ` : ""}${pct(item.pass_rate)} · ${item.passed}/${item.judged}</span>
         </button>`).join("")}
       </div>
     </aside>
@@ -651,7 +660,7 @@ function renderModels(selectedName = DATA.models[0]?.name) {
 
 function renderModelTable(model) {
   return `<h2>${esc(model.original_model || model.name)}</h2>
-    <p class="muted">${model.version ? `${esc(model.version)} · ` : ""}${esc(model.model_id)} · ${pct(model.pass_rate)} · ${model.passed}/${model.judged} passed · ${model.unjudged} unjudged</p>
+    <p class="muted">${model.version ? `${esc(runLabel(model.version))} · ` : ""}${esc(model.model_id)} · ${pct(model.pass_rate)} · ${model.passed}/${model.judged} passed</p>
     <details><summary>Model config</summary><pre>${esc(JSON.stringify(model.model_config || {}, null, 2))}</pre></details>
     <table>
       <thead><tr><th>Problem</th><th>Status</th><th>Usage</th><th>Cost</th></tr></thead>
@@ -717,7 +726,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeLightbox();
 });
 
-fetch("data/manifest.json")
+fetch("data/manifest.json", { cache: "no-store" })
   .then((response) => {
     if (!response.ok) throw new Error(`data/manifest.json (${response.status})`);
     return response.json();

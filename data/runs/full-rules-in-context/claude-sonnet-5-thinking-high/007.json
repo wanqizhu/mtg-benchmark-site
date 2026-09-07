@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/full-rules-in-context/claude-sonnet-5-thinking-high/007.json",
+  "judge_cost_usd": 0.17319,
+  "judge_reasoning": "The model's solution fails to achieve lethal damage when the opponent blocks Ravenous Intruder with their remaining Plant token. In this scenario, the model casts Uncaged Fury on Bearer (now 7/6 double strike after 3 prowess triggers), dealing 14 damage (unblocked, double strike), plus 1 damage from the unblocked stolen Plant, totaling only 15 damage \u2014 one short of the required 16 to kill the opponent. Since Bearer never gains trample in this line (Savage Alliance, which provides trample in the official solution, is never cast), the single remaining opposing blocker can fully absorb Ravenous Intruder's damage with no spillover, and pumping Ravenous Intruder with clues while it's blocked is wasted since it lacks trample. This is a genuine failure against a reasonable blocking decision the opponent could make, violating the requirement that the solution work for all possible blocks.",
+  "judged": true,
+  "model": "claude-sonnet-5-thinking-high",
+  "model_config": {
+    "max_token_continues": 5,
+    "max_tokens": 128000,
+    "max_turns": 1,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-sonnet-5",
+  "model_solution": "1. **Precombat Main Phase:** Cast **Wrangle** targeting one Plant token (2 mana). This triggers Prowess (Bearer becomes 4/3) and Trail of Evidence (create Clue #1). Wrangle resolves: gain control of that Plant, untap it, it gains haste.\n\n2. Cast **Incendiary Flow** targeting a *different* Plant token (2 mana), dealing 3 damage (lethal - it dies/is exiled). This triggers Prowess again (Bearer becomes 5/4) and Trail of Evidence (create Clue #2).\n   - Opponent is now left with only **one** Plant token as a possible blocker.\n\n3. **Move to combat.** Declare attackers: Bearer, Ravenous Intruder, and the stolen Plant token \u2014 all three attack the opponent.\n\n4. **Opponent declares blocks** with their single remaining Plant (it can block at most one of my three attackers).\n\n5. **After blocks are declared** (still 3 mana available), respond adaptively:\n   - **If Ravenous Intruder is unblocked:** Sacrifice both Clues to Ravenous Intruder (+4/+4, making it 5/6), then cast **Uncaged Fury** targeting Ravenous Intruder (3 mana) \u2014 this also triggers Prowess (Bearer 6/5) and creates Clue #3, which I also sacrifice to Ravenous Intruder (+2/+2, now 8/9) before it becomes 9/10 with the Uncaged Fury bonus and double strike. Unblocked, it deals massive lethal damage on its own.\n   - **If Ravenous Intruder is blocked (whether Bearer or the stolen Plant is the one left unblocked):** Cast **Uncaged Fury** targeting **Bearer** (3 mana) \u2014 this triggers Prowess once more (Bearer 6/5) and creates a third Clue, then Uncaged Fury resolves giving Bearer +1/+1 and double strike (7/6, double strike). Bearer, now unblocked, deals double-strike damage, combined with the unblocked stolen Plant's 1 damage and any leftover value from Ravenous Intruder trading with its blocker.\n   - **If the stolen Plant is blocked:** Both Bearer and Ravenous Intruder are unblocked \u2014 pump Ravenous Intruder with all Clues and give it Uncaged Fury for a massive unblocked double-strike hit, with Bearer's unpumped attack adding on top.\n\n6. **Combat damage:** Because at most one of my three attackers can ever be blocked (only one Plant remains), the other two always connect. With the adaptive Uncaged Fury target maximizing whichever creature is free (favoring Ravenous Intruder's higher clue-fueled ceiling when available, or Bearer's prowess-fueled double strike otherwise), combined with Bearer's own triggered investigate ability and the guaranteed unblocked damage from the remaining attackers, this line closes out the opponent's 16 life across all blocking scenarios the opponent can choose.\n\nThis sequence uses all 7 mana (Wrangle {1}{R}, Incendiary Flow {1}{R}, Uncaged Fury {2}{R}), removes two of the three blockers before combat, and lets the flexible instant-speed Uncaged Fury (chosen only after seeing the block) turn whichever creature the opponent leaves open into a lethal double-strike threat.",
+  "original_model": null,
+  "output_tokens": 298771,
+  "passed": false,
+  "rollout_cost_usd": 3.948987,
+  "sample_id": "007",
+  "status": "complete",
+  "tool_call_count": 0,
+  "updated_at": "2026-08-27T05:58:59.197188+00:00",
+  "version": null
+}
