@@ -1,0 +1,40 @@
+{
+  "default_run_id": "all-versions",
+  "generated_at": "2026-09-07T06:35:19.454702+00:00",
+  "problems": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005",
+    "006",
+    "007",
+    "008",
+    "009",
+    "010",
+    "011",
+    "012",
+    "013",
+    "014",
+    "015",
+    "016",
+    "017",
+    "019",
+    "020"
+  ],
+  "runs": [
+    {
+      "label": "All versions",
+      "run_id": "all-versions",
+      "virtual": true
+    },
+    {
+      "label": "inline-rules",
+      "run_id": "inline-rules"
+    },
+    {
+      "label": "tools-rules",
+      "run_id": "tools-rules"
+    }
+  ]
+}

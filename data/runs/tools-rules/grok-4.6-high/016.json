@@ -1,0 +1,27 @@
+{
+  "detail_path": "data/runs/tools-rules/grok-4.6-high/016.json",
+  "judge_cost_usd": 0.080208,
+  "judge_reasoning": "The model's solution follows the same core combo as the official solution: Cartouche of Zeal + Harmless Offering causes the Aura to fall off via state-based action (illegal attachment since the enchanted creature is no longer controlled by the Aura's controller), which enables Revolt for Fatal Push. The model swaps which of the two functionally-equivalent 5-toughness MV3 fliers (Olivia and Drana) receives the 'can't block' effect versus the Fatal Push kill -- this swap is explicitly anticipated as valid by the official solution's phrasing ('one of the 5-toughness fliers' / 'the other'). Glorybringer's exert trigger targets Drana's Emissary in both solutions, killing the 4/4. All three opposing blockers are neutralized (one can't block, two die), and the now opponent-controlled Alley Strangler lacks flying/reach so cannot block anyway. This leaves both attacking fliers (4+4=8 damage) unblocked, exactly lethal against the opponent's 8 life. Mana costs (1R + 2R + B = 5 mana) match the available 2 Mountains + 3 Swamps. The solution is correct and essentially equivalent to the official one.",
+  "judged": true,
+  "model": "grok-4.6-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": null
+  },
+  "model_id": "grok-4.6",
+  "model_solution": "1. Cast Cartouche of Zeal targeting Alley Strangler. Its ETB ability targets Olivia, Mobilized for War (it cannot block this turn).\n2. Cast Harmless Offering targeting the opponent and Alley Strangler. The opponent gains control of Alley Strangler; Cartouche of Zeal then goes to the graveyard as a state-based action (illegal attachment), enabling revolt.\n3. Cast Fatal Push targeting Drana, Liberator of Malakir (destroyed via revolt).\n4. Attack with Glorybringer (exerted, targeting Drana's Emissary) and Goldnight Castigator. Drana's Emissary dies; the opponent has no legal blockers. 8 combat damage is dealt.",
+  "original_model": null,
+  "output_tokens": 32005,
+  "passed": true,
+  "rollout_cost_usd": 0.280596,
+  "sample_id": "016",
+  "status": "complete",
+  "tool_call_count": 8,
+  "updated_at": "2026-09-06T21:01:00.284059+00:00",
+  "version": null
+}

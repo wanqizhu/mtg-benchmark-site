@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/tools-rules/claude-sonnet-5-thinking-high/016.json",
+  "judge_cost_usd": 0.087544,
+  "judge_reasoning": "The model solution uses the identical key mechanism as the official solution (using Cartouche of Zeal's can't-block ETB trigger, then giving away the enchanted creature via Harmless Offering to trigger Revolt when the Aura falls off as an illegal attachment), just swapping which of the two symmetric 5-toughness/MV-3 creatures (Olivia vs Drana) receives the can't-block effect versus the Fatal Push removal. All mana costs check out, the sequencing correctly satisfies Revolt before Fatal Push resolves, Glorybringer's exert ability kills Drana's Emissary before blockers are declared, and the opponent is left with no legal blockers for either flying attacker, resulting in exactly 8 damage to reduce the opponent from 8 to 0 life. This is a valid and deterministic line.",
+  "judged": true,
+  "model": "claude-sonnet-5-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-sonnet-5",
+  "model_solution": "1. Cast **Cartouche of Zeal** (paying with a Mountain), enchanting **Alley Strangler**. For its \"enters the battlefield\" trigger, target **Olivia, Mobilized for War** so she can't block this turn.\n\n2. Cast **Harmless Offering** (paying with the second Mountain + 2 Swamps), giving the opponent control of **Alley Strangler**.\n   - Because Cartouche of Zeal says \"Enchant creature you control,\" and Alley Strangler is no longer under our control, the Aura becomes illegally attached. As a state-based action, Cartouche of Zeal is put into our graveyard.\n   - This satisfies **Revolt** (\"a permanent left the battlefield under your control this turn\") for the remainder of the turn.\n   - Alley Strangler reverts to its base 2/3 Menace stats, now controlled by the opponent (it has no flying or reach).\n\n3. Cast **Fatal Push** (paying with the last Swamp), targeting **Drana, Liberator of Malakir**. Revolt is active, so this destroys Drana (mana value 3, \u2264 4).\n\n4. Proceed to combat. Attack with **Glorybringer** and **Goldnight Castigator** (both flying).\n   - As Glorybringer attacks, exert it, dealing 4 damage to **Drana's Emissary**, killing her.\n\n5. Declare blockers: The opponent only has **Olivia** (disabled from blocking by Cartouche's effect) and **Alley Strangler** (no flying or reach, so it cannot block either of our flying attackers). The opponent has zero legal blockers, no cards in hand, no mana, and no relevant activated abilities\u2014so there is nothing they can do.\n\n6. Combat damage: Glorybringer (4) + Goldnight Castigator (4) = 8 unblocked damage. The opponent goes from 8 life to 0 and loses the game.\n\nThis line is fully deterministic and wins regardless of any choice the opponent could make, since after these plays they have no creature capable of blocking either attacking flyer.",
+  "original_model": null,
+  "output_tokens": 302331,
+  "passed": true,
+  "rollout_cost_usd": 7.900782,
+  "sample_id": "016",
+  "status": "complete",
+  "tool_call_count": 15,
+  "updated_at": "2026-09-06T21:17:19.980509+00:00",
+  "version": null
+}

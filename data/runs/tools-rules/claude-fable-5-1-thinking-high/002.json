@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/tools-rules/claude-fable-5-1-thinking-high/002.json",
+  "judge_cost_usd": 0.054062,
+  "judge_reasoning": "The model solution follows the same core strategy as the official solution: enchant Pummeler with Tezzeret's Touch to enable a 4-artifact count, use Tezzeret's -2 for +4/-4, pump with energy for +9/+9, cast Yahenni's Expertise to wipe smaller creatures while surviving with a 15/7 Pummeler, then free-cast Savage Alliance (escalated) to kill the remaining Kessig Dire Swine and Consulate Skygate, clearing the way for lethal attack. All mana and energy resources are tracked correctly and used without conflicts, and the sequencing is legal. This is a valid, correctly-reasoned execution of the same winning line as the official solution.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "1. Cast Tezzeret's Touch on Electrostatic Pummeler, paying with Island ({U}), Swamp ({B}), and tapping/sacrificing one Etherium Cell for the generic {1}. Pummeler is now a 5/5. You control exactly 4 artifacts (Pummeler + 3 Etherium Cells).\n2. Activate Tezzeret the Schemer's \u22122 targeting Electrostatic Pummeler: it gets +4/\u22124 \u2192 9/1 (Tezzeret goes to 5 loyalty).\n3. Activate Pummeler's ability, paying {E}{E}{E}: X = its current power 9, so it gets +9/+9 \u2192 18/10.\n4. Cast Yahenni's Expertise ({2}{B}{B}) using Swamp ({B}), Mountain, and two Etherium Cells (one for {B}, one generic). One Etherium Cell remains.\n   - All creatures get \u22123/\u22123: Pummeler becomes 15/7; Brood Monitor (0/0) and all four Servos (\u22122/\u22122) die; Kessig Dire Swine is 3/3; Consulate Skygate is \u22123/1.\n   - Using Yahenni's free cast, cast Savage Alliance from hand without paying its mana cost, choosing two modes and paying the escalate {1} with the last Etherium Cell: \"2 damage to target creature\" targeting Kessig Dire Swine, and \"1 damage to each creature target opponent controls.\"\n5. Savage Alliance resolves: Kessig Dire Swine (3/3) takes 2 + 1 = 3 damage and dies; Consulate Skygate (toughness 1) takes 1 damage and dies. The opponent has no creatures left.\n6. Go to combat and attack with Electrostatic Pummeler (15/7). With no possible blockers, it deals 15 damage to the opponent, who goes from 15 to 0.",
+  "original_model": null,
+  "output_tokens": 17365,
+  "passed": true,
+  "rollout_cost_usd": 1.29987,
+  "sample_id": "002",
+  "status": "complete",
+  "tool_call_count": 2,
+  "updated_at": "2026-09-05T23:40:48.780620+00:00",
+  "version": null
+}

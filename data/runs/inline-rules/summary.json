@@ -1,0 +1,989 @@
+{
+  "label": "inline-rules",
+  "leaderboard": [
+    {
+      "attempted": 8,
+      "failed": 5,
+      "judge_cost_usd": 1.32206,
+      "judged": 8,
+      "model_config": {
+        "max_token_continues": 5,
+        "max_tokens": 128000,
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "display": "summarized",
+          "type": "adaptive"
+        }
+      },
+      "model_id": "claude-sonnet-5",
+      "name": "claude-sonnet-5-thinking-low",
+      "output_tokens": 1914359,
+      "pass_rate": 0.375,
+      "passed": 3,
+      "rank": 1,
+      "rollout_cost_usd": 24.985157,
+      "tool_call_count": 0,
+      "total_cost_usd": 26.307217,
+      "unjudged": 0
+    },
+    {
+      "attempted": 8,
+      "failed": 6,
+      "judge_cost_usd": 1.105469,
+      "judged": 8,
+      "model_config": {
+        "max_token_continues": 5,
+        "max_tokens": 128000,
+        "output_config": {
+          "effort": "high"
+        },
+        "thinking": {
+          "display": "summarized",
+          "type": "adaptive"
+        }
+      },
+      "model_id": "claude-sonnet-5",
+      "name": "claude-sonnet-5-thinking-high",
+      "output_tokens": 2204367,
+      "pass_rate": 0.25,
+      "passed": 2,
+      "rank": 2,
+      "rollout_cost_usd": 27.304758,
+      "tool_call_count": 0,
+      "total_cost_usd": 28.410227,
+      "unjudged": 0
+    }
+  ],
+  "models": [
+    {
+      "attempted": 8,
+      "failed": 5,
+      "judge_cost_usd": 1.32206,
+      "judged": 8,
+      "model_config": {
+        "max_token_continues": 5,
+        "max_tokens": 128000,
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "display": "summarized",
+          "type": "adaptive"
+        }
+      },
+      "model_id": "claude-sonnet-5",
+      "name": "claude-sonnet-5-thinking-low",
+      "output_tokens": 1914359,
+      "pass_rate": 0.375,
+      "passed": 3,
+      "problems": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/001.json",
+          "judge_cost_usd": 0.057876,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 36180,
+          "passed": true,
+          "rollout_cost_usd": 0.425926,
+          "sample_id": "001",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T04:05:22.931717+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/002.json",
+          "judge_cost_usd": 0.178232,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 416945,
+          "passed": false,
+          "rollout_cost_usd": 5.965631,
+          "sample_id": "002",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:20:22.568059+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/003.json",
+          "judge_cost_usd": 0.080806,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 294964,
+          "passed": false,
+          "rollout_cost_usd": 3.911949,
+          "sample_id": "003",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T05:56:55.143409+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/004.json",
+          "judge_cost_usd": 0.226144,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 329090,
+          "passed": false,
+          "rollout_cost_usd": 4.254071,
+          "sample_id": "004",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:03:52.427614+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/005.json",
+          "judge_cost_usd": 0.172182,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 352240,
+          "passed": false,
+          "rollout_cost_usd": 4.484823,
+          "sample_id": "005",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:07:45.910529+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/006.json",
+          "judge_cost_usd": 0.261876,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 330265,
+          "passed": false,
+          "rollout_cost_usd": 4.266173,
+          "sample_id": "006",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:25:28.698697+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/007.json",
+          "judge_cost_usd": 0.14882,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 115890,
+          "passed": true,
+          "rollout_cost_usd": 1.223328,
+          "sample_id": "007",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T04:19:30.606474+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/008.json",
+          "judge_cost_usd": 0.196124,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 38785,
+          "passed": true,
+          "rollout_cost_usd": 0.453256,
+          "sample_id": "008",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T04:06:01.936739+00:00"
+        }
+      ],
+      "rank": 1,
+      "rollout_cost_usd": 24.985157,
+      "tool_call_count": 0,
+      "total_cost_usd": 26.307217,
+      "unjudged": 0
+    },
+    {
+      "attempted": 8,
+      "failed": 6,
+      "judge_cost_usd": 1.105469,
+      "judged": 8,
+      "model_config": {
+        "max_token_continues": 5,
+        "max_tokens": 128000,
+        "output_config": {
+          "effort": "high"
+        },
+        "thinking": {
+          "display": "summarized",
+          "type": "adaptive"
+        }
+      },
+      "model_id": "claude-sonnet-5",
+      "name": "claude-sonnet-5-thinking-high",
+      "output_tokens": 2204367,
+      "pass_rate": 0.25,
+      "passed": 2,
+      "problems": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/001.json",
+          "judge_cost_usd": 0.034746,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 56630,
+          "passed": true,
+          "rollout_cost_usd": 0.630426,
+          "sample_id": "001",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-26T23:45:26.107729+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/002.json",
+          "judge_cost_usd": 0.029023,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 445799,
+          "passed": false,
+          "rollout_cost_usd": 4.520352,
+          "sample_id": "002",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-28T05:23:21.071874+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/003.json",
+          "judge_cost_usd": 0.101004,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 183665,
+          "passed": true,
+          "rollout_cost_usd": 2.22218,
+          "sample_id": "003",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T00:06:20.845813+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/004.json",
+          "judge_cost_usd": 0.176238,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 319163,
+          "passed": false,
+          "rollout_cost_usd": 4.154811,
+          "sample_id": "004",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:02:04.628736+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/005.json",
+          "judge_cost_usd": 0.113222,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 423898,
+          "passed": false,
+          "rollout_cost_usd": 6.034217,
+          "sample_id": "005",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:20:31.808648+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/006.json",
+          "judge_cost_usd": 0.276936,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 116216,
+          "passed": false,
+          "rollout_cost_usd": 1.227326,
+          "sample_id": "006",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T05:51:06.620223+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/007.json",
+          "judge_cost_usd": 0.17319,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 298771,
+          "passed": false,
+          "rollout_cost_usd": 3.948987,
+          "sample_id": "007",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T05:58:59.197188+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/008.json",
+          "judge_cost_usd": 0.20111,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 360225,
+          "passed": false,
+          "rollout_cost_usd": 4.566459,
+          "sample_id": "008",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:07:53.079735+00:00"
+        }
+      ],
+      "rank": 2,
+      "rollout_cost_usd": 27.304758,
+      "tool_call_count": 0,
+      "total_cost_usd": 28.410227,
+      "unjudged": 0
+    }
+  ],
+  "problems": [
+    {
+      "attempted": 2,
+      "difficulty": "Common",
+      "has_detail": true,
+      "id": "001",
+      "image": "assets/problems/001.png",
+      "judged": 2,
+      "models": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/001.json",
+          "judge_cost_usd": 0.057876,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 36180,
+          "passed": true,
+          "rollout_cost_usd": 0.425926,
+          "sample_id": "001",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T04:05:22.931717+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/001.json",
+          "judge_cost_usd": 0.034746,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 56630,
+          "passed": true,
+          "rollout_cost_usd": 0.630426,
+          "sample_id": "001",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-26T23:45:26.107729+00:00"
+        }
+      ],
+      "passed": 2
+    },
+    {
+      "attempted": 2,
+      "difficulty": "Uncommon",
+      "has_detail": true,
+      "id": "002",
+      "image": "assets/problems/002.jpg",
+      "judged": 2,
+      "models": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/002.json",
+          "judge_cost_usd": 0.178232,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 416945,
+          "passed": false,
+          "rollout_cost_usd": 5.965631,
+          "sample_id": "002",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:20:22.568059+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/002.json",
+          "judge_cost_usd": 0.029023,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 445799,
+          "passed": false,
+          "rollout_cost_usd": 4.520352,
+          "sample_id": "002",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-28T05:23:21.071874+00:00"
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 2,
+      "difficulty": "Rare",
+      "has_detail": true,
+      "id": "003",
+      "image": "assets/problems/003.jpg",
+      "judged": 2,
+      "models": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/003.json",
+          "judge_cost_usd": 0.080806,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 294964,
+          "passed": false,
+          "rollout_cost_usd": 3.911949,
+          "sample_id": "003",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T05:56:55.143409+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/003.json",
+          "judge_cost_usd": 0.101004,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 183665,
+          "passed": true,
+          "rollout_cost_usd": 2.22218,
+          "sample_id": "003",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T00:06:20.845813+00:00"
+        }
+      ],
+      "passed": 1
+    },
+    {
+      "attempted": 2,
+      "difficulty": "Mythic",
+      "has_detail": true,
+      "id": "004",
+      "image": "assets/problems/004.jpg",
+      "judged": 2,
+      "models": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/004.json",
+          "judge_cost_usd": 0.226144,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 329090,
+          "passed": false,
+          "rollout_cost_usd": 4.254071,
+          "sample_id": "004",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:03:52.427614+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/004.json",
+          "judge_cost_usd": 0.176238,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 319163,
+          "passed": false,
+          "rollout_cost_usd": 4.154811,
+          "sample_id": "004",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:02:04.628736+00:00"
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 2,
+      "difficulty": "Rare",
+      "has_detail": true,
+      "id": "005",
+      "image": "assets/problems/005.jpg",
+      "judged": 2,
+      "models": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/005.json",
+          "judge_cost_usd": 0.172182,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 352240,
+          "passed": false,
+          "rollout_cost_usd": 4.484823,
+          "sample_id": "005",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:07:45.910529+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/005.json",
+          "judge_cost_usd": 0.113222,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 423898,
+          "passed": false,
+          "rollout_cost_usd": 6.034217,
+          "sample_id": "005",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:20:31.808648+00:00"
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 2,
+      "difficulty": "Mythic",
+      "has_detail": true,
+      "id": "006",
+      "image": "assets/problems/006.jpg",
+      "judged": 2,
+      "models": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/006.json",
+          "judge_cost_usd": 0.261876,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 330265,
+          "passed": false,
+          "rollout_cost_usd": 4.266173,
+          "sample_id": "006",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:25:28.698697+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/006.json",
+          "judge_cost_usd": 0.276936,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 116216,
+          "passed": false,
+          "rollout_cost_usd": 1.227326,
+          "sample_id": "006",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T05:51:06.620223+00:00"
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 2,
+      "difficulty": "Uncommon",
+      "has_detail": true,
+      "id": "007",
+      "image": "assets/problems/007.jpg",
+      "judged": 2,
+      "models": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/007.json",
+          "judge_cost_usd": 0.14882,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 115890,
+          "passed": true,
+          "rollout_cost_usd": 1.223328,
+          "sample_id": "007",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T04:19:30.606474+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/007.json",
+          "judge_cost_usd": 0.17319,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 298771,
+          "passed": false,
+          "rollout_cost_usd": 3.948987,
+          "sample_id": "007",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T05:58:59.197188+00:00"
+        }
+      ],
+      "passed": 1
+    },
+    {
+      "attempted": 2,
+      "difficulty": "Rare",
+      "has_detail": true,
+      "id": "008",
+      "image": "assets/problems/008.jpg",
+      "judged": 2,
+      "models": [
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-low/008.json",
+          "judge_cost_usd": 0.196124,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 38785,
+          "passed": true,
+          "rollout_cost_usd": 0.453256,
+          "sample_id": "008",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T04:06:01.936739+00:00"
+        },
+        {
+          "detail_path": "data/runs/inline-rules/claude-sonnet-5-thinking-high/008.json",
+          "judge_cost_usd": 0.20111,
+          "judged": true,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 360225,
+          "passed": false,
+          "rollout_cost_usd": 4.566459,
+          "sample_id": "008",
+          "status": "complete",
+          "tool_call_count": 0,
+          "updated_at": "2026-08-27T06:07:53.079735+00:00"
+        }
+      ],
+      "passed": 1
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Common",
+      "has_detail": true,
+      "id": "009",
+      "image": "assets/problems/009.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "009",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "009",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Rare",
+      "has_detail": true,
+      "id": "010",
+      "image": "assets/problems/010.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "010",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "010",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Rare",
+      "has_detail": true,
+      "id": "011",
+      "image": "assets/problems/011.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "011",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "011",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Special",
+      "has_detail": true,
+      "id": "012",
+      "image": "assets/problems/012.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "012",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "012",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Mythic",
+      "has_detail": true,
+      "id": "013",
+      "image": "assets/problems/013.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "013",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "013",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Rare",
+      "has_detail": true,
+      "id": "014",
+      "image": "assets/problems/014.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "014",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "014",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Rare",
+      "has_detail": true,
+      "id": "015",
+      "image": "assets/problems/015.png",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "015",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "015",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Mythic",
+      "has_detail": true,
+      "id": "016",
+      "image": "assets/problems/016.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "016",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "016",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Rare",
+      "has_detail": true,
+      "id": "017",
+      "image": "assets/problems/017.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "017",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "017",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Uncommon",
+      "has_detail": true,
+      "id": "019",
+      "image": "assets/problems/019.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "019",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "019",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    },
+    {
+      "attempted": 0,
+      "difficulty": "Uncommon",
+      "has_detail": true,
+      "id": "020",
+      "image": "assets/problems/020.jpg",
+      "judged": 0,
+      "models": [
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-low",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "020",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        },
+        {
+          "judge_cost_usd": 0.0,
+          "judged": false,
+          "model": "claude-sonnet-5-thinking-high",
+          "output_tokens": 0,
+          "passed": null,
+          "rollout_cost_usd": 0.0,
+          "sample_id": "020",
+          "status": "not_attempted",
+          "tool_call_count": 0
+        }
+      ],
+      "passed": 0
+    }
+  ],
+  "run_id": "inline-rules"
+}

@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/tools-rules/claude-fable-5-1-thinking-high/015.json",
+  "judge_cost_usd": 0.036304,
+  "judge_reasoning": "The model's solution follows the same line as the official solution: activate Gideon's +1 to animate him, cast Illusory Wrappings on Gideon and Dead Weight on the Knight token to reduce their power to 1 (enabling skulk-based unblockability from Behind the Scenes), attack unblocked, then use Anguished Unmaking on the Illusory Wrappings aura after blocks are declared to restore Gideon to 6/6, dealing exactly 7 damage for lethal. All power/toughness calculations, mana costs, and timing considerations are correct and consistent with the official solution.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "1. Main phase 1: Activate Gideon, Ally of Zendikar's +1 ability. Gideon becomes a 5/5 indestructible Human Soldier Ally creature (6/6 with the emblem) that's still a planeswalker. He has been under your control since the turn began, so he can attack.\n2. Cast Illusory Wrappings (Farmland for U + 2 more mana) targeting Gideon. His base P/T becomes 0/2; with the emblem he is 1/3.\n3. Cast Dead Weight (Swamp) targeting your Knight Ally token. It becomes 1/1 (2/2 base, +1/+1 emblem, -2/-2).\n4. Go to combat and attack the opponent with Gideon (1/3) and the Knight Ally token (1/1). Both have skulk from Behind the Scenes and have power 1; Seraph of the Suns (4), Sparring Mummy (3), and Labyrinth Guardian (2) all have greater power, so none of them can legally block either attacker.\n5. In the declare blockers step, after no blocks are declared, cast Anguished Unmaking (Farmland for W, Swamp for B, plus 1 more) targeting Illusory Wrappings, exiling it. You lose 3 life (irrelevant). Gideon reverts to 5/5, +1/+1 from the emblem = 6/6. Blocks have already been declared, so he remains unblocked.\n6. Combat damage: Gideon deals 6 and the Knight Ally token deals 1, for 7 total. The opponent goes from 7 to 0 and loses.",
+  "original_model": null,
+  "output_tokens": 5668,
+  "passed": true,
+  "rollout_cost_usd": 0.46646,
+  "sample_id": "015",
+  "status": "complete",
+  "tool_call_count": 2,
+  "updated_at": "2026-09-06T20:22:57.220711+00:00",
+  "version": null
+}

@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/tools-rules/claude-fable-5-1-thinking-high/005.json",
+  "judge_cost_usd": 0.187734,
+  "judge_reasoning": "The model's solution uses the same core combo as the official solution: kill the Servo with Fourth Bridge Prowler, use Night Market Lookout/Defiant Bloodlord lifedrain synergy to reduce opponent life by 4, pump Crackdown Construct via 5 Crew activations and 3 Equip activations (matching the official solution's total trigger count, just presented as discrete individual steps rather than grouped ones), then attack with an 11/10 Crackdown Construct plus a 1/1 Kor token for exactly 12 lethal damage against an opponent at 12 life with no legal blockers. Mana usage (5 total) exactly matches available Swamps. All rules interactions, including a Vehicle crewing itself once it becomes a creature, are legitimate and are explicitly used in the official solution as well, confirming this is a valid mechanic in this puzzle's context.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "1. Cast Fourth Bridge Prowler (Swamp #1). ETB trigger: Servo gets -1/-1 and dies. Opponent now has no creature that can block a non-flier.\n2. Cast the second Night Market Lookout (Swamp #2).\n3. Activate Crew 1 on Aethersphere Harvester, tapping the first Night Market Lookout. Lookout trigger: opponent loses 1 (15), you gain 1 \u2192 Defiant Bloodlord trigger: opponent loses 1 (14). Crackdown Construct trigger: 3/3. Harvester is now an artifact creature.\n4. Activate Crew 1 again, tapping the second Night Market Lookout: opponent to 13, then 12 via Bloodlord. Construct 4/4.\n5. Activate Crew 1 again, tapping Fourth Bridge Prowler. Construct 5/5.\n6. Activate Crew 1 again, tapping Defiant Bloodlord (its life-loss trigger still works while tapped). Construct 6/6.\n7. Activate Crew 1 again, tapping the (now creature) Aethersphere Harvester itself. Construct 7/7.\n8. Equip Captain's Claws to Crackdown Construct (Swamp #3). Construct 8/8, +1/+0 \u2192 9/8.\n9. Equip Captain's Claws to Fourth Bridge Prowler (Swamp #4). Construct 9/9.\n10. Equip Captain's Claws back to Crackdown Construct (Swamp #5). Construct 10/10, +1/+0 \u2192 11/10.\n11. Attack with Crackdown Construct. Captain's Claws trigger: create a 1/1 Kor Ally token tapped and attacking. Neither Gloomwidow can block (both attackers lack flying) and the Servo is dead, so nothing can block.\n12. Combat damage: 11 (Construct) + 1 (Kor) = 12 \u2265 12 remaining life. Opponent goes to 0 and loses.",
+  "original_model": null,
+  "output_tokens": 44775,
+  "passed": true,
+  "rollout_cost_usd": 2.71786,
+  "sample_id": "005",
+  "status": "complete",
+  "tool_call_count": 3,
+  "updated_at": "2026-09-06T18:26:24.290382+00:00",
+  "version": null
+}

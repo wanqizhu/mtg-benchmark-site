@@ -1,0 +1,29 @@
+{
+  "detail_path": "data/runs/tools-rules/claude-haiku-4-5-thinking/016.json",
+  "judge_cost_usd": 0.0,
+  "judge_reasoning": "No final answer provided.",
+  "judged": true,
+  "model": "claude-haiku-4-5-thinking",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 64000,
+    "max_turns": 20,
+    "output_config": null,
+    "thinking": {
+      "budget_tokens": 10000,
+      "display": "summarized",
+      "type": "enabled"
+    }
+  },
+  "model_id": "claude-haiku-4-5-20251001",
+  "model_solution": null,
+  "original_model": null,
+  "output_tokens": 52469,
+  "passed": false,
+  "rollout_cost_usd": 0.264815,
+  "sample_id": "016",
+  "status": "complete",
+  "tool_call_count": 0,
+  "updated_at": "2026-09-06T20:51:52.794854+00:00",
+  "version": null
+}

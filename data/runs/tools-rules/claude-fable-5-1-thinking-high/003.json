@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/tools-rules/claude-fable-5-1-thinking-high/003.json",
+  "judge_cost_usd": 0.097756,
+  "judge_reasoning": "The model solution correctly uses the same core trick as the official solution (casting spells to trigger Dynavolt Tower/Thermo-Alchemist repeatedly, bouncing an unresolved Shock via Brutal Expulsion to reuse it, killing Indulgent Aristocrat, and finishing with an unblockable menace attacker). Mana costs, trigger stack order, and damage totals (4 from Thermo-Alchemist + 3 from Dynavolt Tower + 3 from Weldfast Monitor = 10) are all verified correct and exactly lethal. The combat math confirming Weldfast Monitor is unblockable due to menace and Hinterland Drake's restriction is also correct.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "1. Tap Thermo-Alchemist: 1 damage to opponent (10 \u2192 9).\n2. Tap a Mountain, cast Shock (targeting the opponent). Thermo-Alchemist's untap trigger and Dynavolt Tower's trigger resolve (Alchemist untaps, 2 energy). With Shock still on the stack, tap Thermo-Alchemist: 1 damage (9 \u2192 8).\n3. Still holding Shock on the stack, tap Wandering Fumarole (U) + 3 Mountains and cast Brutal Expulsion choosing both modes: return target spell (my Shock) to its owner's hand, and 2 damage to Indulgent Aristocrat. Triggers resolve (Alchemist untaps, energy = 4). Tap Thermo-Alchemist: 1 damage (8 \u2192 7).\n4. Brutal Expulsion resolves: Shock returns to my hand; Indulgent Aristocrat (3/3) has 2 damage marked.\n5. Tap a Mountain, cast Shock targeting Indulgent Aristocrat. Triggers resolve (Alchemist untaps, energy = 6). Tap Thermo-Alchemist: 1 damage (7 \u2192 6). Shock resolves: Aristocrat has 4 damage and dies.\n6. Tap Dynavolt Tower, pay 5 energy: 3 damage to opponent (6 \u2192 3).\n7. Tap the second Wandering Fumarole for R, activate Weldfast Monitor: it gains menace.\n8. Attack with Weldfast Monitor (3/2 menace). Hinterland Drake can't block artifact creatures, Aristocrat is dead, and Kalitas alone cannot block a menace creature. Monitor is unblocked: 3 damage (3 \u2192 0). Opponent loses.",
+  "original_model": null,
+  "output_tokens": 6144,
+  "passed": true,
+  "rollout_cost_usd": 0.33642,
+  "sample_id": "003",
+  "status": "complete",
+  "tool_call_count": 0,
+  "updated_at": "2026-09-06T18:18:14.563803+00:00",
+  "version": null
+}

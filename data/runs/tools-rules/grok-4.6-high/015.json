@@ -1,0 +1,27 @@
+{
+  "detail_path": "data/runs/tools-rules/grok-4.6-high/015.json",
+  "judge_cost_usd": 0.208074,
+  "judge_reasoning": "The model's line uses a different but valid approach: baiting Labyrinth Guardian's mandatory sacrifice trigger with Dead Weight (a well-known real rules interaction), exiling Sparring Mummy with Anguished Unmaking, casting Temmet for an unblockable/pumped token, and using Behind the Scenes' skulk to render the remaining attackers unblockable by the sole remaining blocker (Seraph, power 4). All spells are correctly costed and castable within available mana (7 lands), and timing/sequencing is legal. The result is 10 unblockable damage against a 7-life opponent, which is lethal regardless of blocking decisions. This is a legitimate alternate solution to the puzzle.",
+  "judged": true,
+  "model": "grok-4.6-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": null
+  },
+  "model_id": "grok-4.6",
+  "model_solution": "1. Activate Gideon\u2019s 0 ability, creating a second Knight Ally token (both tokens are 3/3 with the emblem).\n2. Cast Dead Weight targeting Labyrinth Guardian; it is sacrificed to its own trigger and Dead Weight does not attach.\n3. Cast Temmet, Vizier of Naktamun (3/3 with the emblem).\n4. Cast Anguished Unmaking targeting Sparring Mummy, exiling it.\n5. At the beginning of combat, Temmet\u2019s trigger gives one Knight token +1/+1 and \u201ccan\u2019t be blocked\u201d (it is now 4/4).\n6. Attack with Temmet (3/3), the 4/4 Knight, and the remaining 3/3 Knight. Seraph of the Suns (power 4) cannot block either 3/3 because of skulk and cannot block the 4/4 at all, so all 10 damage gets through.",
+  "original_model": null,
+  "output_tokens": 15930,
+  "passed": true,
+  "rollout_cost_usd": 0.15845,
+  "sample_id": "015",
+  "status": "complete",
+  "tool_call_count": 5,
+  "updated_at": "2026-09-06T20:58:48.146077+00:00",
+  "version": null
+}

@@ -1,0 +1,27 @@
+{
+  "detail_path": "data/runs/tools-rules/grok-4.6-high/010.json",
+  "judge_cost_usd": 0.162548,
+  "judge_reasoning": "The model's line is rules-legal and mana-efficient (exactly 5 mana for Doomed Dissenter + Trial of Solidarity, matching available lands). It correctly builds up five attackers (Wayward Disciple 4/5, Bontu 6/7, Salvager 5/4, two Zombie tokens 4/3) totaling 23 power after Trial of Solidarity's buff, having already dealt 1 damage via Wayward Disciple's death trigger (opponent to 9 life). Checking all blocking permutations (accounting for Bontu's menace requiring both blockers, and Paladin's lifelink), the worst case for the attacker (opponent blocks Salvager and one other creature with single blocks) still results in the opponent going to -2 life. All other block configurations result in even more lethal damage. This differs from the official solution's approach (which uses Liliana's -3 reanimation and multiple Salvager sacrifices for a bigger buffer) but is independently valid and guarantees a win regardless of opponent's blocking choices.",
+  "judged": true,
+  "model": "grok-4.6-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": null
+  },
+  "model_id": "grok-4.6",
+  "model_solution": "1. Activate Liliana, Death's Majesty's +1 ability, creating a 2/2 Zombie token and milling Pious Evangel and a Swamp.\n2. Cast Doomed Dissenter.\n3. Activate Defiant Salvager, sacrificing Doomed Dissenter. Salvager gets a +1/+1 counter. Doomed Dissenter's death creates a 2/2 Zombie token and Wayward Disciple causes the opponent to lose 1 life (to 9).\n4. Cast Trial of Solidarity. Your creatures get +2/+1 and vigilance until end of turn (Wayward Disciple 4/5, Bontu 6/7, Salvager 5/4, both Zombies 4/3).\n5. Attack with Wayward Disciple, Bontu the Glorified, Defiant Salvager, and both Zombie tokens. Bontu's menace and the opponent's two blockers cannot prevent lethal damage (at least 14 combat damage minus at most 3 from Paladin's lifelink).",
+  "original_model": null,
+  "output_tokens": 11529,
+  "passed": true,
+  "rollout_cost_usd": 0.073406,
+  "sample_id": "010",
+  "status": "complete",
+  "tool_call_count": 0,
+  "updated_at": "2026-09-06T20:51:46.313037+00:00",
+  "version": null
+}

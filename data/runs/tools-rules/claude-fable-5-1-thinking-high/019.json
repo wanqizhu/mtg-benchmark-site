@@ -1,0 +1,30 @@
+{
+  "detail_path": "data/runs/tools-rules/claude-fable-5-1-thinking-high/019.json",
+  "judge_cost_usd": 0.052506,
+  "judge_reasoning": "The model's solution follows the same core line as the official solution: move Stitcher's Graft from Furyblade Vampire to The Scorpion God (sacrificing the Vampire), use Key to the City to make the now-9/8 Scorpion God unblockable, attack for 9 (11->2), then move the Graft to Skirsdag Supplicant (sacrificing the Scorpion God, triggering its return-to-hand delayed trigger), and finally activate Skirsdag Supplicant during the end step by discarding the returned Scorpion God to deal 2 more damage, finishing the opponent (2->0). All costs are correctly paid (2+2+1 = 5 mana, matching the 5 available lands), all triggers and timing restrictions (equip at sorcery speed, delayed trigger during end step) are properly respected, and the opponent has no way to interact given the unblockable and damage-based effects. This matches the official solution in substance and order.",
+  "judged": true,
+  "model": "claude-fable-5-1-thinking-high",
+  "model_config": {
+    "max_token_continues": 0,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "model_id": "claude-fable-5-1",
+  "model_solution": "Main phase 1:\n1. Pay {2} (two lands): Equip Stitcher's Graft to The Scorpion God. The Graft becomes unattached from Furyblade Vampire, so the Graft's trigger sacrifices the Vampire. The Scorpion God is now 9/8.\n2. Activate Key to the City: tap it and discard Precise Strike, targeting The Scorpion God \u2014 it can't be blocked this turn.\n\nCombat:\n3. Attack with The Scorpion God only (Skirsdag Supplicant stays home, untapped). It's unblockable and deals 9 damage. Opponent: 11 \u2192 2.\n\nMain phase 2:\n4. Pay {2} (two more lands): Equip Stitcher's Graft to Skirsdag Supplicant. The Graft becomes unattached from The Scorpion God, so the Graft's trigger sacrifices The Scorpion God. Its \"when this dies\" ability triggers: it will return to my hand at the beginning of the next end step.\n\nEnd step:\n5. At the beginning of the end step, The Scorpion God returns to my hand.\n6. With my last land (a Swamp or Canyon Slough for {B}), activate Skirsdag Supplicant: {B}, {T}, discard The Scorpion God \u2014 each player loses 2 life. Opponent: 2 \u2192 0. Win.\n\n(The opponent has no cards, no mana-relevant actions, and no way to block an unblockable creature, so this works against every possible response.)",
+  "original_model": null,
+  "output_tokens": 34787,
+  "passed": true,
+  "rollout_cost_usd": 2.16803,
+  "sample_id": "019",
+  "status": "complete",
+  "tool_call_count": 2,
+  "updated_at": "2026-09-06T20:30:18.496099+00:00",
+  "version": null
+}

@@ -1,0 +1,27 @@
+{
+  "detail_path": "data/runs/tools-rules/grok-4.6-high/001.json",
+  "judge_cost_usd": 0.057644,
+  "judge_reasoning": "The model's solution follows essentially the same line as the official solution: use Key to the City to discard/madness-cast Welcome to the Fold cheaply (X=0), counter it with Confirm Suspicions to generate 3 Clue tokens (the actual effect of Welcome to the Fold is irrelevant), sacrifice the Key and 3 Clues to Ravenous Intruder for +8/+8 (making it 9/10), and attack unblockable for exactly 9 damage. Mana costs check out exactly (7 lands cover 4 U + 3 generic), the stack resolution order is legal (Key's ability resolving after Confirm Suspicions still grants unblockable despite the source being later sacrificed), and the final damage exactly matches the opponent's life total. This is a valid, rules-legal execution of the same core combo as the official solution.",
+  "judged": true,
+  "model": "grok-4.6-high",
+  "model_config": {
+    "max_token_continues": 2,
+    "max_tokens": 128000,
+    "max_turns": 20,
+    "output_config": {
+      "effort": "high"
+    },
+    "thinking": null
+  },
+  "model_id": "grok-4.6",
+  "model_solution": "1. Activate Key to the City targeting Ravenous Intruder, discarding Welcome to the Fold.\n2. Cast Welcome to the Fold for its madness cost with X=0 (paying {U}{U}), targeting any creature.\n3. Cast Confirm Suspicions targeting Welcome to the Fold (paying {3}{U}{U}).\n4. Confirm Suspicions resolves: counter Welcome to the Fold and create three Clue tokens.\n5. Key to the City\u2019s ability resolves: Ravenous Intruder can\u2019t be blocked this turn.\n6. Activate Ravenous Intruder four times, sacrificing Key to the City and the three Clue tokens. Ravenous Intruder is now 9/10.\n7. Attack with Ravenous Intruder (unblockable) for 9 damage.",
+  "original_model": null,
+  "output_tokens": 17197,
+  "passed": true,
+  "rollout_cost_usd": 0.31887,
+  "sample_id": "001",
+  "status": "complete",
+  "tool_call_count": 17,
+  "updated_at": "2026-08-28T05:58:14.449112+00:00",
+  "version": null
+}
