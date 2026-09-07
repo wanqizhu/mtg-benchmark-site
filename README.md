@@ -18,7 +18,7 @@ From the `mtg-benchmark` repo:
 bench site --output-dir ../mtg-benchmark-site
 ```
 
-That rewrites `data/` and `assets/`, and refreshes the frontend files. Incremental evals mostly add small JSON files under `data/runs/<run>/<model>/`.
+That publishes the **grep-rules** run by default, rewrites `data/` and `assets/`, and refreshes the frontend. Visible attempt pages include sanitized rollout transcripts. Incremental evals mostly add JSON files under `data/runs/<run>/<model>/`.
 
 To keep scores for every problem in a range but only publish a few puzzle pages:
 

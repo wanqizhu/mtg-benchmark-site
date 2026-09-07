@@ -1,6 +1,6 @@
 {
-  "default_run_id": "all-versions",
-  "generated_at": "2026-09-07T16:09:49.132030+00:00",
+  "default_run_id": "grep-rules",
+  "generated_at": "2026-09-07T18:06:03.706532+00:00",
   "problems": [
     "001",
     "002",
@@ -23,15 +23,6 @@
     "020"
   ],
   "runs": [
-    {
-      "label": "All versions",
-      "run_id": "all-versions",
-      "virtual": true
-    },
-    {
-      "label": "full rules in context",
-      "run_id": "full-rules-in-context"
-    },
     {
       "label": "grep rules",
       "run_id": "grep-rules"

@@ -111,33 +111,6 @@
       "unjudged": 0
     },
     {
-      "attempted": 8,
-      "failed": 4,
-      "judge_cost_usd": 1.326172,
-      "judged": 8,
-      "model_config": {
-        "max_token_continues": 5,
-        "max_tokens": 64000,
-        "output_config": {
-          "effort": "low"
-        },
-        "thinking": {
-          "display": "summarized",
-          "type": "adaptive"
-        }
-      },
-      "model_id": "claude-sonnet-5",
-      "name": "claude-sonnet-5-thinking-low",
-      "output_tokens": 1351751,
-      "pass_rate": 0.5,
-      "passed": 4,
-      "rank": 5,
-      "rollout_cost_usd": 20.57312,
-      "tool_call_count": 12,
-      "total_cost_usd": 21.899292,
-      "unjudged": 0
-    },
-    {
       "attempted": 19,
       "failed": 12,
       "judge_cost_usd": 2.301828,
@@ -158,7 +131,7 @@
       "output_tokens": 3963193,
       "pass_rate": 0.3684210526315789,
       "passed": 7,
-      "rank": 6,
+      "rank": 5,
       "rollout_cost_usd": 69.126128,
       "tool_call_count": 91,
       "total_cost_usd": 71.427956,
@@ -183,7 +156,7 @@
       "output_tokens": 433779,
       "pass_rate": 0.0,
       "passed": 0,
-      "rank": 7,
+      "rank": 6,
       "rollout_cost_usd": 2.256725,
       "tool_call_count": 3,
       "total_cost_usd": 4.141467,
@@ -1297,139 +1270,6 @@
       "unjudged": 0
     },
     {
-      "attempted": 8,
-      "failed": 4,
-      "judge_cost_usd": 1.326172,
-      "judged": 8,
-      "model_config": {
-        "max_token_continues": 5,
-        "max_tokens": 64000,
-        "output_config": {
-          "effort": "low"
-        },
-        "thinking": {
-          "display": "summarized",
-          "type": "adaptive"
-        }
-      },
-      "model_id": "claude-sonnet-5",
-      "name": "claude-sonnet-5-thinking-low",
-      "output_tokens": 1351751,
-      "pass_rate": 0.5,
-      "passed": 4,
-      "problems": [
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/001.json",
-          "judge_cost_usd": 0.041156,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 23079,
-          "passed": true,
-          "rollout_cost_usd": 0.23619,
-          "sample_id": "001",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T04:03:07.321664+00:00"
-        },
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/002.json",
-          "judge_cost_usd": 0.072054,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 166269,
-          "passed": true,
-          "rollout_cost_usd": 2.938276,
-          "sample_id": "002",
-          "status": "complete",
-          "tool_call_count": 5,
-          "updated_at": "2026-08-27T05:39:29.402534+00:00"
-        },
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/003.json",
-          "judge_cost_usd": 0.173284,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 133779,
-          "passed": true,
-          "rollout_cost_usd": 1.739928,
-          "sample_id": "003",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T04:44:30.663184+00:00"
-        },
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/004.json",
-          "judge_cost_usd": 0.074534,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 199331,
-          "passed": false,
-          "rollout_cost_usd": 3.097254,
-          "sample_id": "004",
-          "status": "complete",
-          "tool_call_count": 4,
-          "updated_at": "2026-08-27T05:44:26.061016+00:00"
-        },
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/005.json",
-          "judge_cost_usd": 0.207668,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 264746,
-          "passed": false,
-          "rollout_cost_usd": 4.284422,
-          "sample_id": "005",
-          "status": "complete",
-          "tool_call_count": 3,
-          "updated_at": "2026-08-27T06:01:18.226213+00:00"
-        },
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/006.json",
-          "judge_cost_usd": 0.292518,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 259930,
-          "passed": false,
-          "rollout_cost_usd": 3.911652,
-          "sample_id": "006",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T06:06:54.312661+00:00"
-        },
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/007.json",
-          "judge_cost_usd": 0.205902,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 38171,
-          "passed": true,
-          "rollout_cost_usd": 0.387412,
-          "sample_id": "007",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T04:05:33.936508+00:00"
-        },
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/008.json",
-          "judge_cost_usd": 0.259056,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 266446,
-          "passed": false,
-          "rollout_cost_usd": 3.977986,
-          "sample_id": "008",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T05:55:15.768929+00:00"
-        }
-      ],
-      "rank": 5,
-      "rollout_cost_usd": 20.57312,
-      "tool_call_count": 12,
-      "total_cost_usd": 21.899292,
-      "unjudged": 0
-    },
-    {
       "attempted": 19,
       "failed": 12,
       "judge_cost_usd": 2.301828,
@@ -1699,7 +1539,7 @@
           "updated_at": "2026-09-06T20:45:06.192428+00:00"
         }
       ],
-      "rank": 6,
+      "rank": 5,
       "rollout_cost_usd": 69.126128,
       "tool_call_count": 91,
       "total_cost_usd": 71.427956,
@@ -1973,7 +1813,7 @@
           "updated_at": "2026-09-06T20:48:33.798901+00:00"
         }
       ],
-      "rank": 7,
+      "rank": 6,
       "rollout_cost_usd": 2.256725,
       "tool_call_count": 3,
       "total_cost_usd": 4.141467,
@@ -1982,12 +1822,12 @@
   ],
   "problems": [
     {
-      "attempted": 7,
+      "attempted": 6,
       "difficulty": "Common",
       "has_detail": true,
       "id": "001",
       "image": "assets/problems/001.png",
-      "judged": 7,
+      "judged": 6,
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/001.json",
@@ -2042,19 +1882,6 @@
           "updated_at": "2026-08-28T05:58:14.449112+00:00"
         },
         {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/001.json",
-          "judge_cost_usd": 0.041156,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 23079,
-          "passed": true,
-          "rollout_cost_usd": 0.23619,
-          "sample_id": "001",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T04:03:07.321664+00:00"
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/001.json",
           "judge_cost_usd": 0.041448,
           "judged": true,
@@ -2081,15 +1908,15 @@
           "updated_at": "2026-08-26T23:26:55.603724+00:00"
         }
       ],
-      "passed": 6
+      "passed": 5
     },
     {
-      "attempted": 7,
+      "attempted": 6,
       "difficulty": "Uncommon",
       "has_detail": true,
       "id": "002",
       "image": "assets/problems/002.jpg",
-      "judged": 7,
+      "judged": 6,
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/002.json",
@@ -2144,19 +1971,6 @@
           "updated_at": "2026-08-30T05:05:32.884756+00:00"
         },
         {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/002.json",
-          "judge_cost_usd": 0.072054,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 166269,
-          "passed": true,
-          "rollout_cost_usd": 2.938276,
-          "sample_id": "002",
-          "status": "complete",
-          "tool_call_count": 5,
-          "updated_at": "2026-08-27T05:39:29.402534+00:00"
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/002.json",
           "judge_cost_usd": 0.148404,
           "judged": true,
@@ -2183,15 +1997,15 @@
           "updated_at": "2026-08-26T23:28:14.397129+00:00"
         }
       ],
-      "passed": 5
+      "passed": 4
     },
     {
-      "attempted": 7,
+      "attempted": 6,
       "difficulty": "Rare",
       "has_detail": true,
       "id": "003",
       "image": "assets/problems/003.jpg",
-      "judged": 7,
+      "judged": 6,
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/003.json",
@@ -2246,19 +2060,6 @@
           "updated_at": "2026-08-30T04:52:45.521113+00:00"
         },
         {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/003.json",
-          "judge_cost_usd": 0.173284,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 133779,
-          "passed": true,
-          "rollout_cost_usd": 1.739928,
-          "sample_id": "003",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T04:44:30.663184+00:00"
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/003.json",
           "judge_cost_usd": 0.118116,
           "judged": true,
@@ -2285,15 +2086,15 @@
           "updated_at": "2026-08-26T23:27:13.824660+00:00"
         }
       ],
-      "passed": 6
+      "passed": 5
     },
     {
-      "attempted": 7,
+      "attempted": 6,
       "difficulty": "Mythic",
       "has_detail": true,
       "id": "004",
       "image": "assets/problems/004.jpg",
-      "judged": 7,
+      "judged": 6,
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/004.json",
@@ -2348,19 +2149,6 @@
           "updated_at": "2026-08-30T05:13:53.307359+00:00"
         },
         {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/004.json",
-          "judge_cost_usd": 0.074534,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 199331,
-          "passed": false,
-          "rollout_cost_usd": 3.097254,
-          "sample_id": "004",
-          "status": "complete",
-          "tool_call_count": 4,
-          "updated_at": "2026-08-27T05:44:26.061016+00:00"
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/004.json",
           "judge_cost_usd": 0.212408,
           "judged": true,
@@ -2390,12 +2178,12 @@
       "passed": 2
     },
     {
-      "attempted": 7,
+      "attempted": 6,
       "difficulty": "Rare",
       "has_detail": true,
       "id": "005",
       "image": "assets/problems/005.jpg",
-      "judged": 7,
+      "judged": 6,
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/005.json",
@@ -2450,19 +2238,6 @@
           "updated_at": "2026-08-30T05:03:47.756006+00:00"
         },
         {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/005.json",
-          "judge_cost_usd": 0.207668,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 264746,
-          "passed": false,
-          "rollout_cost_usd": 4.284422,
-          "sample_id": "005",
-          "status": "complete",
-          "tool_call_count": 3,
-          "updated_at": "2026-08-27T06:01:18.226213+00:00"
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/005.json",
           "judge_cost_usd": 0.148624,
           "judged": true,
@@ -2492,12 +2267,12 @@
       "passed": 1
     },
     {
-      "attempted": 7,
+      "attempted": 6,
       "difficulty": "Mythic",
       "has_detail": true,
       "id": "006",
       "image": "assets/problems/006.jpg",
-      "judged": 7,
+      "judged": 6,
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/006.json",
@@ -2552,19 +2327,6 @@
           "updated_at": "2026-08-30T05:00:53.657347+00:00"
         },
         {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/006.json",
-          "judge_cost_usd": 0.292518,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 259930,
-          "passed": false,
-          "rollout_cost_usd": 3.911652,
-          "sample_id": "006",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T06:06:54.312661+00:00"
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/006.json",
           "judge_cost_usd": 0.471688,
           "judged": true,
@@ -2594,12 +2356,12 @@
       "passed": 2
     },
     {
-      "attempted": 7,
+      "attempted": 6,
       "difficulty": "Uncommon",
       "has_detail": true,
       "id": "007",
       "image": "assets/problems/007.jpg",
-      "judged": 7,
+      "judged": 6,
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/007.json",
@@ -2654,19 +2416,6 @@
           "updated_at": "2026-08-30T05:06:56.863505+00:00"
         },
         {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/007.json",
-          "judge_cost_usd": 0.205902,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 38171,
-          "passed": true,
-          "rollout_cost_usd": 0.387412,
-          "sample_id": "007",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T04:05:33.936508+00:00"
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/007.json",
           "judge_cost_usd": 0.14117,
           "judged": true,
@@ -2693,15 +2442,15 @@
           "updated_at": "2026-08-27T04:01:32.939825+00:00"
         }
       ],
-      "passed": 6
+      "passed": 5
     },
     {
-      "attempted": 7,
+      "attempted": 6,
       "difficulty": "Rare",
       "has_detail": true,
       "id": "008",
       "image": "assets/problems/008.jpg",
-      "judged": 7,
+      "judged": 6,
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/008.json",
@@ -2754,19 +2503,6 @@
           "status": "complete",
           "tool_call_count": 8,
           "updated_at": "2026-08-30T05:21:31.873424+00:00"
-        },
-        {
-          "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-low/008.json",
-          "judge_cost_usd": 0.259056,
-          "judged": true,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 266446,
-          "passed": false,
-          "rollout_cost_usd": 3.977986,
-          "sample_id": "008",
-          "status": "complete",
-          "tool_call_count": 0,
-          "updated_at": "2026-08-27T05:55:15.768929+00:00"
         },
         {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/008.json",
@@ -2858,17 +2594,6 @@
           "updated_at": "2026-09-06T20:50:03.937751+00:00"
         },
         {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "009",
-          "status": "not_attempted",
-          "tool_call_count": 0
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/009.json",
           "judge_cost_usd": 0.167434,
           "judged": true,
@@ -2956,17 +2681,6 @@
           "status": "complete",
           "tool_call_count": 0,
           "updated_at": "2026-09-06T20:51:46.313037+00:00"
-        },
-        {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "010",
-          "status": "not_attempted",
-          "tool_call_count": 0
         },
         {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/010.json",
@@ -3058,17 +2772,6 @@
           "updated_at": "2026-09-06T21:18:10.860363+00:00"
         },
         {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "011",
-          "status": "not_attempted",
-          "tool_call_count": 0
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/011.json",
           "judge_cost_usd": 0.0,
           "judged": true,
@@ -3156,17 +2859,6 @@
           "status": "complete",
           "tool_call_count": 4,
           "updated_at": "2026-09-06T20:56:35.639779+00:00"
-        },
-        {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "012",
-          "status": "not_attempted",
-          "tool_call_count": 0
         },
         {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/012.json",
@@ -3258,17 +2950,6 @@
           "updated_at": "2026-09-06T21:11:15.790496+00:00"
         },
         {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "013",
-          "status": "not_attempted",
-          "tool_call_count": 0
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/013.json",
           "judge_cost_usd": 0.0,
           "judged": true,
@@ -3356,17 +3037,6 @@
           "status": "complete",
           "tool_call_count": 0,
           "updated_at": "2026-09-06T20:53:13.355810+00:00"
-        },
-        {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "014",
-          "status": "not_attempted",
-          "tool_call_count": 0
         },
         {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/014.json",
@@ -3458,17 +3128,6 @@
           "updated_at": "2026-09-06T20:58:48.146077+00:00"
         },
         {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "015",
-          "status": "not_attempted",
-          "tool_call_count": 0
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/015.json",
           "judge_cost_usd": 0.087172,
           "judged": true,
@@ -3556,17 +3215,6 @@
           "status": "complete",
           "tool_call_count": 8,
           "updated_at": "2026-09-06T21:01:00.284059+00:00"
-        },
-        {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "016",
-          "status": "not_attempted",
-          "tool_call_count": 0
         },
         {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/016.json",
@@ -3658,17 +3306,6 @@
           "updated_at": "2026-09-06T21:04:17.716696+00:00"
         },
         {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "017",
-          "status": "not_attempted",
-          "tool_call_count": 0
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/017.json",
           "judge_cost_usd": 0.0,
           "judged": true,
@@ -3758,17 +3395,6 @@
           "updated_at": "2026-09-06T21:13:46.833077+00:00"
         },
         {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "019",
-          "status": "not_attempted",
-          "tool_call_count": 0
-        },
-        {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/019.json",
           "judge_cost_usd": 0.0,
           "judged": true,
@@ -3856,17 +3482,6 @@
           "status": "complete",
           "tool_call_count": 6,
           "updated_at": "2026-09-06T21:29:20.580036+00:00"
-        },
-        {
-          "judge_cost_usd": 0.0,
-          "judged": false,
-          "model": "claude-sonnet-5-thinking-low",
-          "output_tokens": 0,
-          "passed": null,
-          "rollout_cost_usd": 0.0,
-          "sample_id": "020",
-          "status": "not_attempted",
-          "tool_call_count": 0
         },
         {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/020.json",
