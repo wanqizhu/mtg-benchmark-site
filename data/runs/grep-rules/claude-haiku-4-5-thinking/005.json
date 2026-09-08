@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/claude-haiku-4-5-thinking/005.json",
-  "judge_cost_usd": 0.104944,
-  "judge_reasoning": "The model solution instructs crewing Aethersphere Harvester by tapping the opponent's Servo token, which is illegal since crew costs require tapping creatures the player controls, not the opponent's creatures. Even if charitably reinterpreted as using the player's own Lookout to crew, this creates a contradiction with a later step that claims both Night Market Lookouts attack (one would be tapped from crewing). Furthermore, when the line is corrected and traced through properly, the total damage output against optimal opponent blocking (Gloomwidows blocking the two fliers, Servo blocking the biggest ground threat) falls far short of the required 16 damage (roughly 8 damage), whereas the official solution carefully sequences multiple crew/equip activations for guaranteed unblockable lethal damage via a hexproof-relevant construct pumped enough to get through, plus a Kor Ally token, exploiting that Gloomwidows can only block fliers. The model's solution is neither rules-legal as written nor sufficient to guarantee lethal against reasonable blocks.",
+  "judge_cost_usd": 0.017107,
+  "judge_reasoning": "The line is not rules-legal. The Servo is controlled by the opponent, so it cannot be tapped to pay Aethersphere Harvester's crew cost. Consequently, the Harvester does not become a creature and cannot attack. Additionally, the newly cast Night Market Lookout has summoning sickness and cannot attack, and neither Lookout becomes tapped in the proposed line, so their drain abilities do not trigger. The claimed 16 damage is therefore unsupported and cannot be guaranteed through the opponent's blocks.",
   "judged": true,
   "model": "claude-haiku-4-5-thinking",
   "model_config": {

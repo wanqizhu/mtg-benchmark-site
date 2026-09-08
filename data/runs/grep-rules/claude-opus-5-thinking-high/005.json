@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/claude-opus-5-thinking-high/005.json",
-  "judge_cost_usd": 0.031587,
-  "judge_reasoning": "Captain's Claws begins unattached, and the proposed line spends all five Swamps casting Fourth Bridge Prowler, Night Market Lookout, and Deadlock Trap, leaving no mana to equip it. Therefore the attacking Lookout is only 1/1 and creates no Kor token. The opponent can block Aethersphere Harvester with a Gloomwidow; the unblocked Construct and Lookout deal 8, while the Harvester's lifelink causes only 3 additional life loss through Defiant Bloodlord. Including the two Lookout/Bloodlord drain sequences, this deals 15 total and leaves the opponent at 1 life.",
+  "judge_cost_usd": 0.023642,
+  "judge_reasoning": "Captain's Claws begins unattached, and the model spends all five Swamps casting Fourth Bridge Prowler, Night Market Lookout, and Deadlock Trap, leaving no mana to equip it. Thus the attacking Lookout is only 1/1 and creates no Kor Ally. After the precombat drains, the opponent is at 12; if a Gloomwidow blocks the Harvester, the unblocked Construct and Lookout deal 8, while Harvester's lifelink causes only 3 additional life loss through Defiant Bloodlord, leaving the opponent at 1 life. Therefore the line does not win against a legal blocking choice.",
   "judged": true,
   "model": "claude-opus-5-thinking-high",
   "model_config": {

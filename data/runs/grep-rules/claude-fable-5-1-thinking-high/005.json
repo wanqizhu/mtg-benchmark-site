@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/claude-fable-5-1-thinking-high/005.json",
-  "judge_cost_usd": 0.187734,
-  "judge_reasoning": "The model's solution uses the same core combo as the official solution: kill the Servo with Fourth Bridge Prowler, use Night Market Lookout/Defiant Bloodlord lifedrain synergy to reduce opponent life by 4, pump Crackdown Construct via 5 Crew activations and 3 Equip activations (matching the official solution's total trigger count, just presented as discrete individual steps rather than grouped ones), then attack with an 11/10 Crackdown Construct plus a 1/1 Kor token for exactly 12 lethal damage against an opponent at 12 life with no legal blockers. Mana usage (5 total) exactly matches available Swamps. All rules interactions, including a Vehicle crewing itself once it becomes a creature, are legitimate and are explicitly used in the official solution as well, confirming this is a valid mechanic in this puzzle's context.",
+  "judge_cost_usd": 0.012817,
+  "judge_reasoning": "The model reproduces the old intended solution, including crewing Aethersphere Harvester with itself after it becomes a creature. Although that activation is illegal under current rules, the official grading instructions explicitly say to accept the old solution. The remaining sequencing and damage calculation are correct under that old rules interpretation.",
   "judged": true,
   "model": "claude-fable-5-1-thinking-high",
   "model_config": {

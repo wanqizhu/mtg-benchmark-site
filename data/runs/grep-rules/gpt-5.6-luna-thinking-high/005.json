@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/gpt-5.6-luna-thinking-high/005.json",
-  "judge_cost_usd": 0.197232,
-  "judge_reasoning": "The official solution is illegal because a Vehicle cannot crew itself: crew requires tapping other untapped creatures. Without that self-crew activation, Crackdown Construct is only 10 power after Captain\u2019s Claws, so the attack deals 11 combat damage plus 4 from the two Lookout/Bloodlord drain sequences, totaling 15 rather than 16. No equivalent extra activation is available with 0 energy and the stated mana. Thus the model is substantively correct that the puzzle has no solution as written, although its hypothetical two-energy line would need a second Harvester activation to survive the opponent blocking Harvester.",
+  "judge_cost_usd": 0.031387,
+  "judge_reasoning": "Although the model correctly concludes that the puzzle cannot be won as written, it does not identify the relevant crew-rules change or provide the required modern-rules line dealing 15 damage. Its proposed line instead changes the stated energy total and therefore is not a solution to the given position. With 0 energy, the intended modern line can still deal 15 without using energy; the missing final point results from Aethersphere Harvester no longer being allowed to crew itself, not from the initial energy total.",
   "judged": true,
   "model": "gpt-5.6-luna-thinking-high",
   "model_config": {

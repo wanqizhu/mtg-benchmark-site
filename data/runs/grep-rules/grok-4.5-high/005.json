@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/grok-4.5-high/005.json",
-  "judge_cost_usd": 0.021047,
-  "judge_reasoning": "The proposed line deals only 15 damage. Three equip activations and one crew activation make Crackdown Construct a 7/6 while equipped. Attacking with it, both 1/1 Lookouts, the 1/1 Prowler, and the 1/1 Kor token deals 11 combat damage. The two Lookout triggers plus their two resulting Defiant Bloodlord triggers deal another 4, for 15 total. There is no additional 'final crew pump'; the crew activation was already included in the Construct's 7 power. Also, the Kor token is not declared as an attacker\u2014it is created tapped and attacking by Captain's Claws\u2014though it still contributes the counted 1 damage.",
+  "judge_cost_usd": 0.037822,
+  "judge_reasoning": "The listed line deals only 15 damage, not lethal to an opponent at 16 life. Three equip activations and one crew activation make Crackdown Construct 7/6 while equipped, so combat damage is 7 from the Construct plus 1 each from two Lookouts, Fourth Bridge Prowler, and the Kor token, totaling 11. The two Lookouts cause another 4 life loss through their own triggers and Defiant Bloodlord, for 15 total. The claimed additional crew pump is not present in the line and cannot be obtained after attackers are tapped; under current rules Aethersphere Harvester also cannot crew itself. Thus the solution does not win this turn or correctly explain the 15-damage limitation.",
   "judged": true,
   "model": "grok-4.5-high",
   "model_config": {

@@ -3,8 +3,8 @@
   "leaderboard": [
     {
       "attempted": 29,
-      "failed": 4,
-      "judge_cost_usd": 4.081732,
+      "failed": 3,
+      "judge_cost_usd": 4.061274,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -21,18 +21,18 @@
       "model_id": "gpt-6-astra",
       "name": "gpt-6-astra-thinking-high",
       "output_tokens": 133188,
-      "pass_rate": 0.8620689655172413,
-      "passed": 25,
+      "pass_rate": 0.896551724137931,
+      "passed": 26,
       "rank": 1,
       "rollout_cost_usd": 10.136806,
       "tool_call_count": 92,
-      "total_cost_usd": 14.218537999999999,
+      "total_cost_usd": 14.198080000000001,
       "unjudged": 0
     },
     {
       "attempted": 29,
-      "failed": 8,
-      "judge_cost_usd": 3.080312,
+      "failed": 7,
+      "judge_cost_usd": 2.884252,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -49,18 +49,18 @@
       "model_id": "gpt-5.6-sol",
       "name": "gpt-5.6-sol-thinking-high",
       "output_tokens": 368779,
-      "pass_rate": 0.7241379310344828,
-      "passed": 21,
+      "pass_rate": 0.7586206896551724,
+      "passed": 22,
       "rank": 2,
       "rollout_cost_usd": 8.78319,
       "tool_call_count": 80,
-      "total_cost_usd": 11.863502,
+      "total_cost_usd": 11.667442,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 9,
-      "judge_cost_usd": 3.994657,
+      "judge_cost_usd": 3.81974,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -82,13 +82,13 @@
       "rank": 3,
       "rollout_cost_usd": 83.96171,
       "tool_call_count": 55,
-      "total_cost_usd": 87.956367,
+      "total_cost_usd": 87.78144999999999,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 9,
-      "judge_cost_usd": 1.293869,
+      "judge_cost_usd": 1.285924,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -110,13 +110,13 @@
       "rank": 4,
       "rollout_cost_usd": 45.249406,
       "tool_call_count": 46,
-      "total_cost_usd": 46.543275,
+      "total_cost_usd": 46.53533,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 17,
-      "judge_cost_usd": 3.858212,
+      "judge_cost_usd": 3.648752,
       "judged": 29,
       "model_config": {
         "max_token_continues": 2,
@@ -135,13 +135,13 @@
       "rank": 5,
       "rollout_cost_usd": 12.885796,
       "tool_call_count": 212,
-      "total_cost_usd": 16.744008,
+      "total_cost_usd": 16.534548,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 18,
-      "judge_cost_usd": 1.231943,
+      "judge_cost_usd": 1.248718,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -160,13 +160,13 @@
       "rank": 6,
       "rollout_cost_usd": 10.46102,
       "tool_call_count": 216,
-      "total_cost_usd": 11.692962999999999,
+      "total_cost_usd": 11.709738,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 21,
-      "judge_cost_usd": 2.463356,
+      "judge_cost_usd": 2.346214,
       "judged": 29,
       "model_config": {
         "max_token_continues": 5,
@@ -187,13 +187,13 @@
       "rank": 7,
       "rollout_cost_usd": 94.022002,
       "tool_call_count": 148,
-      "total_cost_usd": 96.485358,
+      "total_cost_usd": 96.368216,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 22,
-      "judge_cost_usd": 0.9300889999999999,
+      "judge_cost_usd": 0.923364,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -215,13 +215,13 @@
       "rank": 8,
       "rollout_cost_usd": 6.107334,
       "tool_call_count": 22,
-      "total_cost_usd": 7.0374229999999995,
+      "total_cost_usd": 7.030698,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 25,
-      "judge_cost_usd": 1.266523,
+      "judge_cost_usd": 1.100678,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -243,13 +243,13 @@
       "rank": 9,
       "rollout_cost_usd": 1.263789,
       "tool_call_count": 71,
-      "total_cost_usd": 2.5303120000000003,
+      "total_cost_usd": 2.3644670000000003,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 29,
-      "judge_cost_usd": 2.2129,
+      "judge_cost_usd": 2.125063,
       "judged": 29,
       "model_config": {
         "max_token_continues": 5,
@@ -268,15 +268,15 @@
       "rank": 10,
       "rollout_cost_usd": 3.223318,
       "tool_call_count": 6,
-      "total_cost_usd": 5.436218,
+      "total_cost_usd": 5.348381,
       "unjudged": 0
     }
   ],
   "models": [
     {
       "attempted": 29,
-      "failed": 4,
-      "judge_cost_usd": 4.081732,
+      "failed": 3,
+      "judge_cost_usd": 4.061274,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -293,8 +293,8 @@
       "model_id": "gpt-6-astra",
       "name": "gpt-6-astra-thinking-high",
       "output_tokens": 133188,
-      "pass_rate": 0.8620689655172413,
-      "passed": 25,
+      "pass_rate": 0.896551724137931,
+      "passed": 26,
       "problems": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/001.json",
@@ -350,11 +350,11 @@
         },
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/005.json",
-          "judge_cost_usd": 0.04314,
+          "judge_cost_usd": 0.022682,
           "judged": true,
           "model": "gpt-6-astra-thinking-high",
           "output_tokens": 9130,
-          "passed": false,
+          "passed": true,
           "rollout_cost_usd": 0.6528,
           "sample_id": "005",
           "status": "complete",
@@ -677,13 +677,13 @@
       "rank": 1,
       "rollout_cost_usd": 10.136806,
       "tool_call_count": 92,
-      "total_cost_usd": 14.218537999999999,
+      "total_cost_usd": 14.198080000000001,
       "unjudged": 0
     },
     {
       "attempted": 29,
-      "failed": 8,
-      "judge_cost_usd": 3.080312,
+      "failed": 7,
+      "judge_cost_usd": 2.884252,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -700,8 +700,8 @@
       "model_id": "gpt-5.6-sol",
       "name": "gpt-5.6-sol-thinking-high",
       "output_tokens": 368779,
-      "pass_rate": 0.7241379310344828,
-      "passed": 21,
+      "pass_rate": 0.7586206896551724,
+      "passed": 22,
       "problems": [
         {
           "detail_path": "data/runs/grep-rules/gpt-5.6-sol-thinking-high/001.json",
@@ -757,11 +757,11 @@
         },
         {
           "detail_path": "data/runs/grep-rules/gpt-5.6-sol-thinking-high/005.json",
-          "judge_cost_usd": 0.214062,
+          "judge_cost_usd": 0.018002,
           "judged": true,
           "model": "gpt-5.6-sol-thinking-high",
           "output_tokens": 13916,
-          "passed": false,
+          "passed": true,
           "rollout_cost_usd": 0.356924,
           "sample_id": "005",
           "status": "complete",
@@ -1084,13 +1084,13 @@
       "rank": 2,
       "rollout_cost_usd": 8.78319,
       "tool_call_count": 80,
-      "total_cost_usd": 11.863502,
+      "total_cost_usd": 11.667442,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 9,
-      "judge_cost_usd": 3.994657,
+      "judge_cost_usd": 3.81974,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -1164,7 +1164,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/claude-fable-5-1-thinking-high/005.json",
-          "judge_cost_usd": 0.187734,
+          "judge_cost_usd": 0.012817,
           "judged": true,
           "model": "claude-fable-5-1-thinking-high",
           "output_tokens": 44775,
@@ -1491,13 +1491,13 @@
       "rank": 3,
       "rollout_cost_usd": 83.96171,
       "tool_call_count": 55,
-      "total_cost_usd": 87.956367,
+      "total_cost_usd": 87.78144999999999,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 9,
-      "judge_cost_usd": 1.293869,
+      "judge_cost_usd": 1.285924,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -1571,7 +1571,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/claude-opus-5-thinking-high/005.json",
-          "judge_cost_usd": 0.031587,
+          "judge_cost_usd": 0.023642,
           "judged": true,
           "model": "claude-opus-5-thinking-high",
           "output_tokens": 84129,
@@ -1898,13 +1898,13 @@
       "rank": 4,
       "rollout_cost_usd": 45.249406,
       "tool_call_count": 46,
-      "total_cost_usd": 46.543275,
+      "total_cost_usd": 46.53533,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 17,
-      "judge_cost_usd": 3.858212,
+      "judge_cost_usd": 3.648752,
       "judged": 29,
       "model_config": {
         "max_token_continues": 2,
@@ -1975,7 +1975,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/grok-4.6-high/005.json",
-          "judge_cost_usd": 0.242222,
+          "judge_cost_usd": 0.032762,
           "judged": true,
           "model": "grok-4.6-high",
           "output_tokens": 65137,
@@ -2302,13 +2302,13 @@
       "rank": 5,
       "rollout_cost_usd": 12.885796,
       "tool_call_count": 212,
-      "total_cost_usd": 16.744008,
+      "total_cost_usd": 16.534548,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 18,
-      "judge_cost_usd": 1.231943,
+      "judge_cost_usd": 1.248718,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -2379,7 +2379,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/grok-4.5-high/005.json",
-          "judge_cost_usd": 0.021047,
+          "judge_cost_usd": 0.037822,
           "judged": true,
           "model": "grok-4.5-high",
           "output_tokens": 61131,
@@ -2706,13 +2706,13 @@
       "rank": 6,
       "rollout_cost_usd": 10.46102,
       "tool_call_count": 216,
-      "total_cost_usd": 11.692962999999999,
+      "total_cost_usd": 11.709738,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 21,
-      "judge_cost_usd": 2.463356,
+      "judge_cost_usd": 2.346214,
       "judged": 29,
       "model_config": {
         "max_token_continues": 5,
@@ -2785,7 +2785,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/005.json",
-          "judge_cost_usd": 0.148624,
+          "judge_cost_usd": 0.031482,
           "judged": true,
           "model": "claude-sonnet-5-thinking-high",
           "output_tokens": 388613,
@@ -3112,13 +3112,13 @@
       "rank": 7,
       "rollout_cost_usd": 94.022002,
       "tool_call_count": 148,
-      "total_cost_usd": 96.485358,
+      "total_cost_usd": 96.368216,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 22,
-      "judge_cost_usd": 0.9300889999999999,
+      "judge_cost_usd": 0.923364,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -3192,7 +3192,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/gpt-5.6-terra-thinking-high/005.json",
-          "judge_cost_usd": 0.050912,
+          "judge_cost_usd": 0.044187,
           "judged": true,
           "model": "gpt-5.6-terra-thinking-high",
           "output_tokens": 25706,
@@ -3519,13 +3519,13 @@
       "rank": 8,
       "rollout_cost_usd": 6.107334,
       "tool_call_count": 22,
-      "total_cost_usd": 7.0374229999999995,
+      "total_cost_usd": 7.030698,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 25,
-      "judge_cost_usd": 1.266523,
+      "judge_cost_usd": 1.100678,
       "judged": 29,
       "model_config": {
         "max_token_continues": 0,
@@ -3599,7 +3599,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/gpt-5.6-luna-thinking-high/005.json",
-          "judge_cost_usd": 0.197232,
+          "judge_cost_usd": 0.031387,
           "judged": true,
           "model": "gpt-5.6-luna-thinking-high",
           "output_tokens": 21116,
@@ -3926,13 +3926,13 @@
       "rank": 9,
       "rollout_cost_usd": 1.263789,
       "tool_call_count": 71,
-      "total_cost_usd": 2.5303120000000003,
+      "total_cost_usd": 2.3644670000000003,
       "unjudged": 0
     },
     {
       "attempted": 29,
       "failed": 29,
-      "judge_cost_usd": 2.2129,
+      "judge_cost_usd": 2.125063,
       "judged": 29,
       "model_config": {
         "max_token_continues": 5,
@@ -4003,7 +4003,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/claude-haiku-4-5-thinking/005.json",
-          "judge_cost_usd": 0.104944,
+          "judge_cost_usd": 0.017107,
           "judged": true,
           "model": "claude-haiku-4-5-thinking",
           "output_tokens": 21973,
@@ -4330,7 +4330,7 @@
       "rank": 10,
       "rollout_cost_usd": 3.223318,
       "tool_call_count": 6,
-      "total_cost_usd": 5.436218,
+      "total_cost_usd": 5.348381,
       "unjudged": 0
     }
   ],
@@ -4909,11 +4909,11 @@
       "models": [
         {
           "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/005.json",
-          "judge_cost_usd": 0.04314,
+          "judge_cost_usd": 0.022682,
           "judged": true,
           "model": "gpt-6-astra-thinking-high",
           "output_tokens": 9130,
-          "passed": false,
+          "passed": true,
           "rollout_cost_usd": 0.6528,
           "sample_id": "005",
           "status": "complete",
@@ -4922,11 +4922,11 @@
         },
         {
           "detail_path": "data/runs/grep-rules/gpt-5.6-sol-thinking-high/005.json",
-          "judge_cost_usd": 0.214062,
+          "judge_cost_usd": 0.018002,
           "judged": true,
           "model": "gpt-5.6-sol-thinking-high",
           "output_tokens": 13916,
-          "passed": false,
+          "passed": true,
           "rollout_cost_usd": 0.356924,
           "sample_id": "005",
           "status": "complete",
@@ -4935,7 +4935,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/claude-fable-5-1-thinking-high/005.json",
-          "judge_cost_usd": 0.187734,
+          "judge_cost_usd": 0.012817,
           "judged": true,
           "model": "claude-fable-5-1-thinking-high",
           "output_tokens": 44775,
@@ -4948,7 +4948,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/claude-opus-5-thinking-high/005.json",
-          "judge_cost_usd": 0.031587,
+          "judge_cost_usd": 0.023642,
           "judged": true,
           "model": "claude-opus-5-thinking-high",
           "output_tokens": 84129,
@@ -4961,7 +4961,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/grok-4.6-high/005.json",
-          "judge_cost_usd": 0.242222,
+          "judge_cost_usd": 0.032762,
           "judged": true,
           "model": "grok-4.6-high",
           "output_tokens": 65137,
@@ -4974,7 +4974,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/grok-4.5-high/005.json",
-          "judge_cost_usd": 0.021047,
+          "judge_cost_usd": 0.037822,
           "judged": true,
           "model": "grok-4.5-high",
           "output_tokens": 61131,
@@ -4987,7 +4987,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/claude-sonnet-5-thinking-high/005.json",
-          "judge_cost_usd": 0.148624,
+          "judge_cost_usd": 0.031482,
           "judged": true,
           "model": "claude-sonnet-5-thinking-high",
           "output_tokens": 388613,
@@ -5000,7 +5000,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/gpt-5.6-terra-thinking-high/005.json",
-          "judge_cost_usd": 0.050912,
+          "judge_cost_usd": 0.044187,
           "judged": true,
           "model": "gpt-5.6-terra-thinking-high",
           "output_tokens": 25706,
@@ -5013,7 +5013,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/gpt-5.6-luna-thinking-high/005.json",
-          "judge_cost_usd": 0.197232,
+          "judge_cost_usd": 0.031387,
           "judged": true,
           "model": "gpt-5.6-luna-thinking-high",
           "output_tokens": 21116,
@@ -5026,7 +5026,7 @@
         },
         {
           "detail_path": "data/runs/grep-rules/claude-haiku-4-5-thinking/005.json",
-          "judge_cost_usd": 0.104944,
+          "judge_cost_usd": 0.017107,
           "judged": true,
           "model": "claude-haiku-4-5-thinking",
           "output_tokens": 21973,
@@ -5038,7 +5038,7 @@
           "updated_at": "2026-08-27T04:01:51.005526+00:00"
         }
       ],
-      "passed": 1
+      "passed": 3
     },
     {
       "attempted": 10,

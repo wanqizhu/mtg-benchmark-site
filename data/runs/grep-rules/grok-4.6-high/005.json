@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/grok-4.6-high/005.json",
-  "judge_cost_usd": 0.242222,
-  "judge_reasoning": "The model's solution attacks with Aethersphere Harvester, which has flying, making it a legal blocking target for the opponent's Gloomwidows (which can only block flying creatures). If the opponent blocks the Harvester with a Gloomwidow (a fully reasonable and clearly optimal defensive play), the Harvester's 3 power goes to the blocker instead of the player, removing 3 direct damage while only the Bloodlord lifelink trigger (+3 life loss) still applies. Recalculating: new Lookout crew-tap (-2), old Lookout attack-tap (-2), unblocked Crackdown Construct (-7) and Lookout (-1) combat damage, plus Harvester's lifelink-triggered Bloodlord loss (-3), sums to only 15 damage \u2014 one short of the opponent's 16 life. The official solution avoids this vulnerability entirely by routing all damage through ground creatures (Crackdown Construct + Kor Ally token) that Gloomwidows structurally cannot block. Because the model's plan can be defeated by a reasonable blocking decision, it does not guarantee a win in all cases.",
+  "judge_cost_usd": 0.032762,
+  "judge_reasoning": "The line is rules-legal, but it does not win. If a Gloomwidow blocks Aethersphere Harvester, the opponent loses 2 from the newly cast Lookout/Bloodlord triggers, 2 from the attacking Lookout/Bloodlord triggers, 3 from Bloodlord after Harvester's lifelink damage, and 8 combat damage from the unblocked Construct and Lookout, for only 15 total. The opponent survives at 1 life. The model also does not identify the rules change that prevents the old self-crewing solution or acknowledge that only 15 damage is possible, as required by the official grading guidance.",
   "judged": true,
   "model": "grok-4.6-high",
   "model_config": {

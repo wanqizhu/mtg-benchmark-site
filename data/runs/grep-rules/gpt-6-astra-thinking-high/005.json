@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/gpt-6-astra-thinking-high/005.json",
-  "judge_cost_usd": 0.04314,
-  "judge_reasoning": "The model's solution deals only 15 damage/life loss total, leaving the opponent at 1 life instead of achieving lethal, because it incorrectly assumes Aethersphere Harvester cannot crew itself once already animated. In fact, current Magic rules (Crew reminder text lacks the word 'other') and official rulings confirm a Vehicle can be tapped to crew itself if it is already a creature (e.g., from an earlier crew activation that turn), which is exactly what the official solution uses to get the extra Crackdown Construct trigger needed for lethal. Thus the puzzle is not misspecified, and the model's solution fails to meet the objective of winning the game this turn.",
+  "judge_cost_usd": 0.022682,
+  "judge_reasoning": "The model correctly identifies the crew rules change and gives a legal current-rules line dealing 15 total damage: 4 from the two Lookout/Bloodlord trigger sequences and 11 from the equipped Construct plus Kor token. It also accurately explains that the old solution's missing point came from the formerly legal activation in which Aethersphere Harvester crewed itself.",
   "judged": true,
   "model": "gpt-6-astra-thinking-high",
   "model_config": {
@@ -20,7 +20,7 @@
   "model_solution": "**This puzzle relies on an outdated crew rule and has no forced win under the current rules.** The intended line falls one point short:\n\n1. Cast **Fourth Bridge Prowler**, killing the Servo, and cast the second **Night Market Lookout**. Spend two Swamps.\n2. Activate Harvester\u2019s crew ability four separate times, tapping each Lookout, Prowler, and Bloodlord individually. Construct becomes **6/6**. The Lookout triggers and Bloodlord triggers cause **4 life loss**, putting your opponent at **12**.\n3. Spend the remaining three mana activating **Captain\u2019s Claws\u2019 equip ability three times**, targeting Construct each time. Each activation triggers Construct, even when Claws is already attached. Construct becomes **10/9**.\n4. Attack with Construct and Harvester, creating the tapped-and-attacking Kor token. Your opponent can block Harvester with a Gloomwidow. Construct and the Kor deal **11 damage**, leaving your opponent at **1**.\n\n**The intended extra point:** Under the old crew rules, you could additionally tap the animated Harvester to crew itself before combat. That would make Construct **11/10**, allowing Construct and the Kor to deal the remaining 12 damage.\n\nHowever, current **CR 702.122a** defines crew as tapping \u201cother untapped creatures you control,\u201d so **Harvester cannot crew itself**. That formerly legal activation is what made this puzzle\u2019s intended solution lethal.",
   "original_model": null,
   "output_tokens": 9130,
-  "passed": false,
+  "passed": true,
   "rollout_cost_usd": 0.6528,
   "sample_id": "005",
   "status": "complete",
