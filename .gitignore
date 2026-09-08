@@ -1,1 +1,20 @@
 .DS_Store
+
+# Backstop against committing unpublished puzzle pages, images, or transcripts.
+# Allowlist is 001-020. IDs above 020 (including 298-307) stay local even if
+# `bench site --detail-problems` is run too wide. Already-tracked files are
+# not affected; `git add -f` still bypasses this.
+data/problems/*.json
+!data/problems/00[1-9].json
+!data/problems/01[0-9].json
+!data/problems/020.json
+
+assets/problems/*
+!assets/problems/00[1-9].*
+!assets/problems/01[0-9].*
+!assets/problems/020.*
+
+data/runs/*/*/[0-9]*.json
+!data/runs/*/*/00[1-9].json
+!data/runs/*/*/01[0-9].json
+!data/runs/*/*/020.json
