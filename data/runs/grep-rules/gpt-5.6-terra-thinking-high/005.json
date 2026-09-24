@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/gpt-5.6-terra-thinking-high/005.json",
-  "judge_cost_usd": 0.044187,
-  "judge_reasoning": "The post-attack crew activations are illegal. Aethersphere Harvester, Defiant Bloodlord, and Crackdown Construct all became tapped when declared as attackers, so they cannot then be tapped to pay crew costs. In addition, under current rules a Vehicle cannot crew itself because crew requires tapping other creatures. Only Fourth Bridge Prowler can legally crew at that point, leaving Crackdown Construct at 7/7 rather than 10/10. If each Gloomwidow blocks one flying attacker, the resulting guaranteed life loss is only 14, so the opponent survives.",
+  "judge_cost_usd": 0.034587,
+  "judge_reasoning": "After attackers are declared, Crackdown Construct, Aethersphere Harvester, and Defiant Bloodlord are already tapped from attacking, so they cannot be tapped to pay crew costs. Only the untapped Fourth Bridge Prowler can crew at that point. The instruction permits overlooking obsolete self-crewing, but not tapping an already tapped attacker. Thus Crackdown Construct reaches only 7/7, and optimal blocks on the two flying attackers leave 7 from Construct, 1 from the Kor, 2 from the initial Lookout/Bloodlord triggers, and 4 from the Harvester lifelink/Bloodlord trigger: only 14 life lost, short even of the accepted 15-damage threshold.",
   "judged": true,
   "model": "gpt-5.6-terra-thinking-high",
   "model_config": {

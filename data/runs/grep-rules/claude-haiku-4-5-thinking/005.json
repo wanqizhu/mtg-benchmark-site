@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/claude-haiku-4-5-thinking/005.json",
-  "judge_cost_usd": 0.017107,
-  "judge_reasoning": "The line is not rules-legal. The Servo is controlled by the opponent, so it cannot be tapped to pay Aethersphere Harvester's crew cost. Consequently, the Harvester does not become a creature and cannot attack. Additionally, the newly cast Night Market Lookout has summoning sickness and cannot attack, and neither Lookout becomes tapped in the proposed line, so their drain abilities do not trigger. The claimed 16 damage is therefore unsupported and cannot be guaranteed through the opponent's blocks.",
+  "judge_cost_usd": 0.016927,
+  "judge_reasoning": "The line is not rules-legal. The opponent's Servo cannot be tapped to crew your Aethersphere Harvester, so the Harvester does not become a creature and cannot attack. In addition, the newly cast Night Market Lookout has summoning sickness and cannot attack. Granting lifelink twice is redundant, and the claimed lethal damage against all blocking decisions is not demonstrated. Thus this line does not achieve the required 15 damage or win the turn.",
   "judged": true,
   "model": "claude-haiku-4-5-thinking",
   "model_config": {

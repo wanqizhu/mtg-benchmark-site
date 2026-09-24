@@ -1,7 +1,7 @@
 {
   "detail_path": "data/runs/grep-rules/grok-4.6-high/005.json",
-  "judge_cost_usd": 0.032762,
-  "judge_reasoning": "The line is rules-legal, but it does not win. If a Gloomwidow blocks Aethersphere Harvester, the opponent loses 2 from the newly cast Lookout/Bloodlord triggers, 2 from the attacking Lookout/Bloodlord triggers, 3 from Bloodlord after Harvester's lifelink damage, and 8 combat damage from the unblocked Construct and Lookout, for only 15 total. The opponent survives at 1 life. The model also does not identify the rules change that prevents the old self-crewing solution or acknowledge that only 15 damage is possible, as required by the official grading guidance.",
+  "judge_cost_usd": 0.030082,
+  "judge_reasoning": "The line is rules-legal and deals at least 15 damage regardless of blocks. The two lifelink activations and three crew activations grow Crackdown Construct to 7/7. Tapping the new Lookout drains 2 total with Defiant Bloodlord; attacking with the original Lookout drains another 2. Construct and Lookout cannot be blocked by Gloomwidow and deal 8 combat damage. Harvester deals 3 combat damage whether blocked by one or both Gloomwidows, gaining 3 life and causing Bloodlord to drain another 3; if unblocked, it also deals 3 to the opponent. Thus the line reaches the explicitly acceptable 15-damage threshold and is a valid alternative to the official line.",
   "judged": true,
   "model": "grok-4.6-high",
   "model_config": {
@@ -17,7 +17,7 @@
   "model_solution": "1. Cast Deadlock Trap (using 3 mana), getting 2 energy.\n2. Cast Fourth Bridge Prowler (using 1 mana), targeting the opponent\u2019s Servo to give it -1/-1; the Servo dies.\n3. Cast Night Market Lookout (using 1 mana).\n4. Activate Aethersphere Harvester\u2019s ability twice (paying both energy) so it gains lifelink; Crackdown Construct is now 4/4.\n5. Activate Aethersphere Harvester\u2019s crew ability three times, tapping Defiant Bloodlord, Fourth Bridge Prowler and the new Night Market Lookout. Crackdown Construct is now 7/7 and Aethersphere Harvester is a 3/5 creature. The new Lookout\u2019s trigger (plus Defiant Bloodlord) causes the opponent to lose 2 life.\n6. Attack with Crackdown Construct, the original Night Market Lookout and Aethersphere Harvester.\n7. The original Lookout\u2019s trigger (plus Defiant Bloodlord) causes the opponent to lose another 2 life. Aethersphere Harvester deals 3 damage to a blocking Gloomwidow, you gain 3 life, and Defiant Bloodlord causes the opponent to lose 3 life. The unblocked attackers deal 8 damage.",
   "original_model": null,
   "output_tokens": 65137,
-  "passed": false,
+  "passed": true,
   "rollout_cost_usd": 0.64043,
   "sample_id": "005",
   "status": "complete",
