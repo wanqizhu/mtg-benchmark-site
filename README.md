@@ -15,8 +15,12 @@ Then open http://localhost:8000.
 Open `/#/draft-predictions` for the FRA prediction comparison. It contains six
 original AI forecasts and four creator models calibrated using historical data.
 The opening score table and scatter plot use the same 266 cards; the expandable
-table contains the complete 295-card catalog. Creator collection, fitting and
-coefficient details are expandable. Draftsim source timing is provisional.
+table contains the complete 295-card catalog. Source names use distinct colors
+for AI models and creators. The plot shows predicted versus observed GIH;
+hover gives rates and errors, and clicking opens card details. Methodology
+includes the full shared prediction prompt. Creator collection, fitting and
+coefficients are grouped in one expandable section. Draftsim source timing is
+provisional.
 
 The outcome is the frozen October 7, 2026 PremierDraft GIH snapshot. The AI
 forecasts are not recalibrated against FRA outcomes. The creator mappings use
