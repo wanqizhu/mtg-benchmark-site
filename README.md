@@ -10,6 +10,30 @@ python -m http.server 8000
 
 Then open http://localhost:8000.
 
+## Draft Predictions tab
+
+Open `/#/draft-predictions` for the FRA prediction comparison. It contains six
+original AI forecasts and four creator models calibrated using historical data.
+The opening score table and scatter plot use the same 266 cards; the expandable
+table contains the complete 295-card catalog. Creator collection, fitting and
+coefficient details are expandable. Draftsim source timing is provisional.
+
+The outcome is the frozen October 7, 2026 PremierDraft GIH snapshot. The AI
+forecasts are not recalibrated against FRA outcomes. The creator mappings use
+historical fitting, with retrospective policy choices disclosed in the page.
+
+Refresh the comparison from the analysis branch of `mtg-benchmark`:
+
+```sh
+python evaluations/historical-creators-2026-10-09/export_benchmark_tab.py \
+  --model-data evaluations/fra-week-one-2026-10-07/results/dashboard_data.json \
+  --output ../mtg-benchmark-site/data/draft-predictions.json
+```
+
+This exports analyzed card predictions and model metadata without live response
+envelopes or outcome refitting. The benchmark's static generator includes the
+tab assets and preserves this data file when puzzle results are refreshed.
+
 ## Update from eval results
 
 From the `mtg-benchmark` repo:
