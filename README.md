@@ -17,7 +17,9 @@ original AI forecasts and four creator models calibrated using historical data.
 The opening score table and scatter plot use the same 266 cards; the expandable
 table contains the complete 295-card catalog. Source names use distinct colors
 for AI models and creators. The plot shows predicted versus observed GIH;
-hover gives rates and errors, and clicking opens card details. Methodology
+the x axis is predicted GIH and the y axis is observed GIH. Hover gives rates
+and errors, and clicking opens a Scryfall image with prediction stats. The card
+table defaults to observed GIH descending. Methodology
 includes the full shared prediction prompt. Creator collection, fitting and
 coefficients are grouped in one expandable section. Draftsim source timing is
 provisional.
