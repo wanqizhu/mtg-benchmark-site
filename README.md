@@ -20,9 +20,15 @@ for AI models and creators. The plot shows predicted versus observed GIH;
 the x axis is predicted GIH and the y axis is observed GIH. Hover gives rates
 and errors, and clicking opens a Scryfall image with prediction stats. The card
 table defaults to observed GIH descending. Methodology
-includes the full shared prediction prompt. Creator collection, fitting and
+includes the full shared prediction prompt and a current-set creator source
+table with links to both LR reviews. Card details link each published grade to
+its original rating source. Creator collection, fitting and
 coefficients are grouped in one expandable section. Draftsim source timing is
 provisional.
+
+Historical 17Lands source rows offer a readable Tier list link and a separately
+labeled Snapshot JSON link for the exact dated data used in fitting. Casual
+Spike's details identify the community reviewer as Reddit's u/Casual_Spike.
 
 The current outcome is the October 12, 2026 at 08:16:23 UTC PremierDraft ALL_TIME
 GIH pull. All 295 card rows use current outcomes; headline scores retain the
@@ -31,7 +37,7 @@ metadata. The AI
 forecasts are not recalibrated against FRA outcomes. The creator mappings use
 historical fitting, with retrospective policy choices disclosed in the page.
 
-Refresh the comparison from the analysis branch of `mtg-benchmark`:
+Refresh the comparison from `mtg-benchmark`:
 
 ```sh
 python evaluations/historical-creators-2026-10-09/refresh_benchmark_outcomes.py \
