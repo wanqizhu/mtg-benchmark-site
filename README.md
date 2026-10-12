@@ -24,11 +24,28 @@ includes the full shared prediction prompt. Creator collection, fitting and
 coefficients are grouped in one expandable section. Draftsim source timing is
 provisional.
 
-The outcome is the frozen October 7, 2026 PremierDraft GIH snapshot. The AI
+The current outcome is the October 12, 2026 at 08:16:23 UTC PremierDraft ALL_TIME
+GIH pull. All 295 card rows use current outcomes; headline scores retain the
+same 266-card comparison pool. The methodology date is read from the outcome
+metadata. The AI
 forecasts are not recalibrated against FRA outcomes. The creator mappings use
 historical fitting, with retrospective policy choices disclosed in the page.
 
 Refresh the comparison from the analysis branch of `mtg-benchmark`:
+
+```sh
+python evaluations/historical-creators-2026-10-09/refresh_benchmark_outcomes.py \
+  --input ../mtg-benchmark-site/data/draft-predictions.json \
+  --output ../mtg-benchmark-site/data/draft-predictions.json --fetch
+```
+
+This pulls only new outcomes and recomputes the evaluation with fixed predictions
+and creator fits. It also saves the current normalized outcome snapshot in the
+analysis repo's `inputs/fra_outcomes.json`. To reproduce that committed snapshot,
+replace `--fetch` with `--snapshot
+evaluations/historical-creators-2026-10-09/inputs/fra_outcomes.json`.
+
+To rebuild the complete export from retained local analysis artifacts:
 
 ```sh
 python evaluations/historical-creators-2026-10-09/export_benchmark_tab.py \
@@ -36,7 +53,8 @@ python evaluations/historical-creators-2026-10-09/export_benchmark_tab.py \
   --output ../mtg-benchmark-site/data/draft-predictions.json
 ```
 
-This exports analyzed card predictions and model metadata without live response
+This applies the committed current outcomes to analyzed card predictions and
+model metadata without live response
 envelopes or outcome refitting. The benchmark's static generator includes the
 tab assets and preserves this data file when puzzle results are refreshed.
 
