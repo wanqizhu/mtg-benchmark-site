@@ -1,10 +1,8 @@
 .DS_Store
 
-# Local outcome previews use early 17Lands card data. Keep these out of Pages.
+# Local Reality Fracture outcome previews.
 /data/draft-predictions-fra-current.json
 /data/draft-predictions-fra-current.csv
-/data/draft-predictions-trk.json
-/data/draft-predictions-trk.csv
 
 # Backstop against committing unpublished puzzle pages, images, or transcripts.
 # Allowlist is 001-020. IDs above 020 (including 298-307) stay local even if

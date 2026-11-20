@@ -18,14 +18,12 @@ Each score uses that source's rated main-set cards with a reported 17Lands
 Premier Draft GIH win rate and at least 500 games in hand. The original
 internet-enabled Reality Fracture runs are archived under Methodology.
 
-The public Star Trek export includes per-card predictions and aggregate scores.
-It links to 17Lands for observed card rates. A full local Star Trek export, when
-available, supplies the observed rates and scatter plot as well.
+Both sets use the same predicted-versus-observed scatter plot and card table
+locally and on GitHub Pages. The page links to each set's 17Lands data.
 
 To regenerate the data, see
 `evaluations/historical-creators-2026-10-09/preview-inputs/README.md` in
-`mtg-benchmark`. Use the `--public-summary` option to build the public Star Trek
-export without per-card results.
+`mtg-benchmark`.
 
 ## Update from eval results
 
